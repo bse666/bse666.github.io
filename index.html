@@ -9,7 +9,8 @@
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content=" Blog Archives Recent Posts ">
+  <meta name="description" content="How to install cannonball the outrun engine on your own PC for the ultimate
+Retro Experience on Ubuntu/Debian Derivates. With Windows the Process is &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +67,247 @@
       <div class="blog-index">
   
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/02/07/cannonball-%28the-outrun-engine%29/">Cannonball (the OutRun Engine)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-07T00:00:00+01:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>How to install cannonball the outrun engine on your own PC for the ultimate
+Retro Experience on Ubuntu/Debian Derivates. With Windows the Process is defined on the <a href="https://github.com/djyt/cannonball.git">github page</a>.</p>
+
+<div>
+  <pre><code class='bash'>DIRRECTORY=~/git
+mkdir $DIRRECTORY
+git clone https://github.com/djyt/cannonball.git $DIRRECTORY/cannonball
+cd $DIRRECTORY/cannonball
+# could not get it to target debian
+cp cmake/debian.cmake cmake/default.cmake
+mkdir build
+cd build
+sudo apt-get install cmake libsdl1.2-dev libboost1.53-dev -yy
+cmake ../cmake
+make
+ln -s ../roms roms
+# now put your &quot;OutRun Rev.B romset in the roms dir.
+# and off you go by
+
+./cannonball</code></pre>
+</div>
+
+
+<p>Navigate to the options menu with the Arrow keys and &ldquo;1&rdquo; as &ldquo;Enter&rdquo;.
+Edit your keys to your behaviours.
+And Blast off to one of the coolest Gaming Machine Games
+of the last Century.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/02/06/new-blog-in-da-house/">New Blog in Da House</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-06T00:00:00+01:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Welcome here in my little Blogging experience.
+Since the last try&rsquo;s to blog more in the future failed i stumbled
+upon <a href="http://github.io">github-pages</a>.
+Here you got</p>
+
+<p>For a long time i <em>wanted to</em> get some cheat-sheets and tutorials up that i would
+not always have to look up in the web for little things like bash programming
+etc.
+Through the design of static pages and the ability to take your blog everywhere
+you go i couldn&rsquo;t resist to take a tour in the all new jekyll.
+And here we are.</p>
+
+<h3>Plugins i use:</h3>
+
+<ul>
+<li><a href="http://charliepark.org/tags-in-jekyll/">tags-in-jekyll</a></li>
+</ul>
+
+
+<h3>Why Jekyll when blogger.com is also not charging anything?</h3>
+
+<p>Hier kann ich den Tip geben mit der Ubuntu Variante:</p>
+
+<ul>
+<li>Exportieren des Contents von Blogger</li>
+<li><a href="http://blogger.com/home">blogger</a> &ndash;> Blog auswählen.</li>
+<li>Einstellungen &ndash;> Sonstiges</li>
+<li>Blog-Extras &ndash;> Blog exportieren</li>
+<li>blog-(datum).xml speichern</li>
+<li>Ab auf die Console.</li>
+<li>Installation von <a href="http://nodejs.org">nodejs</a></li>
+</ul>
+
+
+<div>
+  <pre><code class='ruby'>sudo npm install -g blogger2jekyll
+# Konvertieren von altdaten in jekyll format
+blogger2jekyll blog-(datum).xml meineAltenBlogPosts</code></pre>
+</div>
+
+
+<p>Nun hat man in seinem Verzeichnis meineAltenBlogPosts alle Posts inklusive der Kommentare.</p>
+
+<p>TODO: Die Bilder werden nicht mit exportiert. (wget?)</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/09/22/tmux-terminalmultiplexer/">TMUX - TerminalMUltipleXer</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+<time datetime="2013-09-22T08:58:00+02:00" pubdate data-updated="true">Sep 22<span>nd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>TMUX. Another great invention. Tmux is like screen but better.
+TerminalMUltipleXer it&rsquo;s called and that&rsquo;s what it does.
+With  this little program you are able to log into a Remote system and let  sessions open for later use. For Screen you have to extensively tweak it  to do your belongings and tmux just has it built in. My killer feature  for this app is it&rsquo;s ability to split Terminal Windows just like a  tiling window manager does.
+Let&rsquo;s say you have 200 ssh sessions open each in one seperate window.
+Now search through the windows with screen:<br />ctrl-a <right> is it here? nope. ctrl-a <right> is it here? nope ctrl-a <right><br />you get it.</right></right></right><br />Search for a specific text in all terminal windows in tmux:<br />ctrl-b f myservernumber1 <enter> and boom!</enter><br />you got a list of all windows with that specific string in it.<br />I still not discovered all features but it&rsquo;s insane what it does to your ssh and console behavoir.<br /><br />Go and try it out.<br /><br />Ubuntu:<br />apt-get install tmux</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/26/mac-kennwort-vergessen/">Mac Kennwort Vergessen</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+<time datetime="2012-07-26T08:02:00+02:00" pubdate data-updated="true">Jul 26<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>How to recreate an Admin Account on a MAC:</p>
+
+<blockquote><p>hold CMD-S or WIN-S and power on the MAC.</p></blockquote>
+
+<p>now some manual editing:</p>
+
+<blockquote><p>fsck -y</p>
+
+<p>mount -uaw /</p>
+
+<p>rm /var/db/.AppleSetupDone</p>
+
+<p>reboot</p></blockquote>
+
+<p>The System now thinks it is not even Set Up yet.
+Now you will be creating a new User and go through the Setup process.
+This user becomes an Administrator on the Mac after the setup.</p>
+
+<p>Have fun.</p>
+
+<p>After writing this i saw the <a href="http://instant-thinking.de/2008/02/14/mac-os-x-passwort-vergessen/">Article from Dennis</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
     <a href="/blog/archives">Blog Archives</a>
@@ -77,6 +319,22 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/02/07/cannonball-%28the-outrun-engine%29/">Cannonball (the OutRun Engine)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/02/06/new-blog-in-da-house/">New Blog in Da House</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/22/tmux-terminalmultiplexer/">TMUX - TerminalMUltipleXer</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/07/26/mac-kennwort-vergessen/">Mac Kennwort Vergessen</a>
+      </li>
     
   </ul>
 </section>
