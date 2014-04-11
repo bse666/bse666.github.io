@@ -27,16 +27,18 @@ Take this list as a first time contact.
     * [ranger](https://wiki.archlinux.org/index.php/Ranger) (file manager for the console)
     * [zsh](http://zsh.sourceforge.net/) (programmable and fully customizable shell)
         * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) (script collection for zsh)
-* [firefox](https://www.mozilla.org/firefox)
+ * [firefox](https://www.mozilla.org/firefox)
   * [vimperator](http://www.vimperator.org/) (vim like bindings for firefox)
     * scripting the web
   * duckduckgoplus (search-engine alternative)
   * noscript (block the tracking scripts and annoying popups)
   * adblock plus (block the spam)
-* [vim](http://vim.org) (very hard in the beginning but it's worth it)
+ * [vim](http://vim.org) (very hard in the beginning but it's worth it)
+    * ctrlp (fast file opener)
     * jekyll.vim (jekyll blog edit help)
     * solarized (solarized theme)
     * tagbar
+    * vim-airline (slim powerline without python)
     * vim-colors-solarized
     * vim-fugitive
     * vim-misc
