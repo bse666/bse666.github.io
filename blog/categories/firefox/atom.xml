@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Firefox | My Blog]]></title>
   <link href="http://bse666.github.io/blog/categories/firefox/atom.xml" rel="self"/>
   <link href="http://bse666.github.io/"/>
-  <updated>2014-04-11T23:03:16+02:00</updated>
+  <updated>2014-04-11T23:08:18+02:00</updated>
   <id>http://bse666.github.io/</id>
   <author>
     <name><![CDATA[bse]]></name>
@@ -54,9 +54,7 @@ theme ever)</li>
 </li>
 </ul>
 </li>
-<li><a href="https://www.mozilla.org/firefox">firefox</a>
-
-<ul>
+<li><a href="https://www.mozilla.org/firefox">firefox</a></li>
 <li><a href="http://www.vimperator.org/">vimperator</a> (vim like bindings for firefox)
 
 <ul>
@@ -66,14 +64,14 @@ theme ever)</li>
 <li>duckduckgoplus (search-engine alternative)</li>
 <li>noscript (block the tracking scripts and annoying popups)</li>
 <li>adblock plus (block the spam)</li>
-</ul>
-</li>
 <li><a href="http://vim.org">vim</a> (very hard in the beginning but it&rsquo;s worth it)
 
 <ul>
+<li>ctrlp (fast file opener)</li>
 <li>jekyll.vim (jekyll blog edit help)</li>
 <li>solarized (solarized theme)</li>
 <li>tagbar</li>
+<li>vim-airline (slim powerline without python)</li>
 <li>vim-colors-solarized</li>
 <li>vim-fugitive</li>
 <li>vim-misc</li>
