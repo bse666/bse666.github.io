@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Kennwort | My Octopress Blog]]></title>
+  <title><![CDATA[Category: Kennwort | My Blog]]></title>
   <link href="http://bse666.github.io/blog/categories/kennwort/atom.xml" rel="self"/>
   <link href="http://bse666.github.io/"/>
-  <updated>2014-04-11T21:54:48+02:00</updated>
+  <updated>2014-04-11T23:03:16+02:00</updated>
   <id>http://bse666.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[bse]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -22,15 +22,16 @@
 
 <blockquote><p>hold CMD-S or WIN-S and power on the MAC.</p></blockquote>
 
-<p>now some manual editing:</p>
-
-<blockquote><p>fsck -y</p>
+<p>now some manual editing:
+```
+fsck -y</p>
 
 <p>mount -uaw /</p>
 
 <p>rm /var/db/.AppleSetupDone</p>
 
-<p>reboot</p></blockquote>
+<p>reboot
+```</p>
 
 <p>The System now thinks it is not even Set Up yet.
 Now you will be creating a new User and go through the Setup process.

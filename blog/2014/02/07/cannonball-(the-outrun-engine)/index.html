@@ -5,8 +5,8 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Cannonball (the OutRun Engine) - My Octopress Blog</title>
-  <meta name="author" content="Your Name">
+  <title>Cannonball (the OutRun Engine) - My Blog</title>
+  <meta name="author" content="bse">
 
   
   <meta name="description" content="How to install cannonball the outrun engine on your own PC for the ultimate
@@ -22,7 +22,7 @@ Retro Experience on Ubuntu/Debian Derivates. With Windows the Process is &hellip
   <link rel="canonical" href="http://bse666.github.io/blog/2014/02/07/cannonball-%28the-outrun-engine%29">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="My Blog" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
@@ -37,9 +37,9 @@ Retro Experience on Ubuntu/Debian Derivates. With Windows the Process is &hellip
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">My Octopress Blog</a></h1>
+  <h1><a href="/">My Blog</a></h1>
   
-    <h2>A blogging framework for hackers.</h2>
+    <h2>thoughts and notes</h2>
   
 </hgroup>
 
@@ -127,7 +127,7 @@ of the last Century.</p>
       
   
 
-<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+<span class="byline author vcard">Posted by <span class="fn">bse</span></span>
 
       
 
@@ -149,8 +149,10 @@ of the last Century.</p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://bse666.github.io/blog/2014/02/07/cannonball-%28the-outrun-engine%29/" data-via="" data-counturl="http://bse666.github.io/blog/2014/02/07/cannonball-%28the-outrun-engine%29/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://bse666.github.io/blog/2014/02/07/cannonball-%28the-outrun-engine%29/" data-via="bse666" data-counturl="http://bse666.github.io/blog/2014/02/07/cannonball-%28the-outrun-engine%29/" >Tweet</a>
   
+  
+  <div class="g-plusone" data-size="medium"></div>
   
   
 </div>
@@ -160,6 +162,8 @@ of the last Century.</p>
       
         <a class="basic-alignment left" href="/blog/2014/02/06/new-blog-in-da-house/" title="Previous Post: New Blog in da House">&laquo; New Blog in da House</a>
       
+      
+        <a class="basic-alignment right" href="/blog/2014/02/07/nethack-4/" title="Next Post: Nethack 4">Nethack 4 &raquo;</a>
       
     </p>
   </footer>
@@ -174,22 +178,55 @@ of the last Century.</p>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2014/02/07/cannonball-%28the-outrun-engine%29/">Cannonball (the OutRun Engine)</a>
+        <a href="/blog/2014/03/07/terminal-fun/">Terminal Fun</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2014/02/06/new-blog-in-da-house/">New Blog in Da House</a>
+        <a href="/blog/2014/03/07/jeopardy/">Jeopardy</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/09/22/tmux-terminalmultiplexer/">TMUX - TerminalMUltipleXer</a>
+        <a href="/blog/2014/02/21/silverlight-videos-on-linux/">Silverlight Videos on Linux</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/07/26/mac-kennwort-vergessen/">Mac Kennwort Vergessen</a>
+        <a href="/blog/2014/02/10/ipv6-private-adresses-in-linux/">IPv6 Private Adresses in Linux</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/02/07/vim-the-most-text-editor-of-all/">VIM the Most Text Editor of All</a>
       </li>
     
   </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/bse666">@bse666</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'bse666',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
 
@@ -203,7 +240,7 @@ of the last Century.</p>
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - Your Name -
+  Copyright &copy; 2014 - bse -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
@@ -213,6 +250,14 @@ of the last Century.</p>
 
 
 
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
 
 
 

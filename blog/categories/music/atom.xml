@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Music | My Blog]]></title>
+  <link href="http://bse666.github.io/blog/categories/music/atom.xml" rel="self"/>
+  <link href="http://bse666.github.io/"/>
+  <updated>2014-04-11T23:03:16+02:00</updated>
+  <id>http://bse666.github.io/</id>
+  <author>
+    <name><![CDATA[bse]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Music in Linux]]></title>
+    <link href="http://bse666.github.io/blog/2013/04/30/Music-in-linux/"/>
+    <updated>2013-04-30T21:34:00+02:00</updated>
+    <id>http://bse666.github.io/blog/2013/04/30/Music-in-linux</id>
+    <content type="html"><![CDATA[<div class="css-full-post-content js-full-post-content">
+  What is the best way to push your music through your home?<br />I tested many things like a centralized PC with xbmc and multicasting over the local network for nearly synchronized playback from many devices but this had an issue. The Devices that would go over WLAN had a serious lag and it was not practical because you couldn't use the wlan for anything more with the multicast hammering through the air.<br /><br />After a few tries with php software and streaming server's i now have the perfect setup for me.<br />You know MPD? (Music Player Deamon!)<br />This nifty little program is so light that it also can be run on a pentium 2 or raspberry pi with not much of ram in use.<br /><br />For the ones that use 2-4 client's to catch the music there is the option to let mpd build its own mp3 stream. But if you fire it to an icecast or shoutcast server this little one can bring the sound to the masses.
+If you want to know more contect me and let me know.</div>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Osx | My Octopress Blog]]></title>
+  <title><![CDATA[Category: Osx | My Blog]]></title>
   <link href="http://bse666.github.io/blog/categories/osx/atom.xml" rel="self"/>
   <link href="http://bse666.github.io/"/>
-  <updated>2014-04-11T21:54:48+02:00</updated>
+  <updated>2014-04-11T23:03:16+02:00</updated>
   <id>http://bse666.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[bse]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>

@@ -5,8 +5,8 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>New Blog in Da House - My Octopress Blog</title>
-  <meta name="author" content="Your Name">
+  <title>New Blog in Da House - My Blog</title>
+  <meta name="author" content="bse">
 
   
   <meta name="description" content="Welcome here in my little Blogging experience.
@@ -24,7 +24,7 @@ Here you &hellip;">
   <link rel="canonical" href="http://bse666.github.io/blog/2014/02/06/new-blog-in-da-house">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="My Blog" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
@@ -39,9 +39,9 @@ Here you &hellip;">
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">My Octopress Blog</a></h1>
+  <h1><a href="/">My Blog</a></h1>
   
-    <h2>A blogging framework for hackers.</h2>
+    <h2>thoughts and notes</h2>
   
 </hgroup>
 
@@ -115,6 +115,15 @@ And here we are.</p>
 
 <h3>Why Jekyll when blogger.com is also not charging anything?</h3>
 
+<p>Jekyll could be less vurnable to attacks because of it&rsquo;s relatively static
+generated sites. This could be a huge plus in the next time.</p>
+
+<p>The second best plus for Jekyll is that you can take your blog and information
+with you and you are able to write and show all posts offline until a little
+internet is available for you.</p>
+
+<h4>Altdaten</h4>
+
 <p>Hier kann ich den Tip geben mit der Ubuntu Variante:</p>
 
 <ul>
@@ -136,8 +145,6 @@ blogger2jekyll blog-(datum).xml meineAltenBlogPosts</code></pre>
 
 
 <p>Nun hat man in seinem Verzeichnis meineAltenBlogPosts alle Posts inklusive der Kommentare.</p>
-
-<p>TODO: Die Bilder werden nicht mit exportiert. (wget?)</p>
 </div>
 
 
@@ -146,7 +153,7 @@ blogger2jekyll blog-(datum).xml meineAltenBlogPosts</code></pre>
       
   
 
-<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+<span class="byline author vcard">Posted by <span class="fn">bse</span></span>
 
       
 
@@ -168,8 +175,10 @@ blogger2jekyll blog-(datum).xml meineAltenBlogPosts</code></pre>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://bse666.github.io/blog/2014/02/06/new-blog-in-da-house/" data-via="" data-counturl="http://bse666.github.io/blog/2014/02/06/new-blog-in-da-house/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://bse666.github.io/blog/2014/02/06/new-blog-in-da-house/" data-via="bse666" data-counturl="http://bse666.github.io/blog/2014/02/06/new-blog-in-da-house/" >Tweet</a>
   
+  
+  <div class="g-plusone" data-size="medium"></div>
   
   
 </div>
@@ -195,22 +204,55 @@ blogger2jekyll blog-(datum).xml meineAltenBlogPosts</code></pre>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2014/02/07/cannonball-%28the-outrun-engine%29/">Cannonball (the OutRun Engine)</a>
+        <a href="/blog/2014/03/07/terminal-fun/">Terminal Fun</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2014/02/06/new-blog-in-da-house/">New Blog in Da House</a>
+        <a href="/blog/2014/03/07/jeopardy/">Jeopardy</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/09/22/tmux-terminalmultiplexer/">TMUX - TerminalMUltipleXer</a>
+        <a href="/blog/2014/02/21/silverlight-videos-on-linux/">Silverlight Videos on Linux</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/07/26/mac-kennwort-vergessen/">Mac Kennwort Vergessen</a>
+        <a href="/blog/2014/02/10/ipv6-private-adresses-in-linux/">IPv6 Private Adresses in Linux</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/02/07/vim-the-most-text-editor-of-all/">VIM the Most Text Editor of All</a>
       </li>
     
   </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/bse666">@bse666</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'bse666',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
 
@@ -224,7 +266,7 @@ blogger2jekyll blog-(datum).xml meineAltenBlogPosts</code></pre>
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - Your Name -
+  Copyright &copy; 2014 - bse -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
@@ -234,6 +276,14 @@ blogger2jekyll blog-(datum).xml meineAltenBlogPosts</code></pre>
 
 
 
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
 
 
 
