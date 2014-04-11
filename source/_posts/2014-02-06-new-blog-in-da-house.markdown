@@ -22,7 +22,14 @@ And here we are.
 * [tags-in-jekyll](http://charliepark.org/tags-in-jekyll/)
 
 ### Why Jekyll when blogger.com is also not charging anything?
+Jekyll could be less vurnable to attacks because of it's relatively static
+generated sites. This could be a huge plus in the next time.
 
+The second best plus for Jekyll is that you can take your blog and information
+with you and you are able to write and show all posts offline until a little
+internet is available for you.
+
+#### Altdaten
 Hier kann ich den Tip geben mit der Ubuntu Variante:
 
 * Exportieren des Contents von Blogger
@@ -39,8 +46,6 @@ blogger2jekyll blog-(datum).xml meineAltenBlogPosts
 {% endhighlight %}
 
 Nun hat man in seinem Verzeichnis meineAltenBlogPosts alle Posts inklusive der Kommentare.
-
-TODO: Die Bilder werden nicht mit exportiert. (wget?)
 
 
 [nodejs]: http://nodejs.org
