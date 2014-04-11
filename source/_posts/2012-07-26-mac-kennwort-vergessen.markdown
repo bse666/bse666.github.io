@@ -12,13 +12,15 @@ How to recreate an Admin Account on a MAC:
 > hold CMD-S or WIN-S and power on the MAC.
 
 now some manual editing:
-> fsck -y
+```
+fsck -y
 
-> mount -uaw /
+mount -uaw /
 
-> rm /var/db/.AppleSetupDone
+rm /var/db/.AppleSetupDone
 
-> reboot
+reboot
+```
 
 The System now thinks it is not even Set Up yet.
 Now you will be creating a new User and go through the Setup process.
