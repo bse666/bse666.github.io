@@ -3,11 +3,11 @@
 # ----------------------- #
 
 url: http://bse666.github.io
-title: My Blog
+title: Home of BSE
 subtitle: thoughts and notes
 author: bse
 simple_search: https://www.google.com/search
-description:
+description: thoughts, notes and such about linux, automation and some other cool stuff.
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
