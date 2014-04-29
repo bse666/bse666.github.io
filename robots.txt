@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://bse666.github.io/sitemap.xml 
