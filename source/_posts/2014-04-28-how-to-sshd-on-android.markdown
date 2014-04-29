@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to enable sshd on Android"
-published: false
+published: true
 categories: [linux, android]
 ---
 
@@ -21,6 +21,7 @@ Install a custom ROM like Cyanogenmod or PAC-ROM. Here are many possibilities to
 customize your android experience.
 You have to unlock the developer options which will void your warranty in some
 countries.
+<!-- more -->
 ## Here you are.
 Assuming that you are already installed and ready. (Android tools for your
 distribution and such), there are a few things to do on your phone.
