@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Firefox | My Blog]]></title>
+  <link href="http://bse666.github.io/blog/categories/firefox/atom.xml" rel="self"/>
+  <link href="http://bse666.github.io/"/>
+  <updated>2014-04-11T23:08:18+02:00</updated>
+  <id>http://bse666.github.io/</id>
+  <author>
+    <name><![CDATA[bse]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Terminal Fun]]></title>
+    <link href="http://bse666.github.io/blog/2014/03/07/terminal-fun/"/>
+    <updated>2014-03-07T00:00:00+01:00</updated>
+    <id>http://bse666.github.io/blog/2014/03/07/terminal-fun</id>
+    <content type="html"><![CDATA[<p>My plan is to ban the mouse out of my daily use System&rsquo;s and be productive too.
+In this Post i present some tools that can help me do that.</p>
+
+<p>Daily work, so what do i have to tweak?
+The Web Browser is startet with the login of course and then there is the Text
+Editing that has to be taken care of. Music and other tools have to be managed.
+One still can&rsquo;t throw away the graphical power browsers but i found some tools
+to take care of the first steps into mouseless using your computer.</p>
+
+<p>As i reviewed in one of my Posts.
+Take this list as a first time contact.</p>
+
+<h2>My Tools</h2>
+
+<ul>
+<li><a href="https://wiki.archlinux.org/index.php/Rxvt-unicode">urxvt</a> (extendable terminal)
+
+<ul>
+<li><a href="http://ethanschoonover.com/solarized">solarized-theme</a> (best eye friendly
+theme ever)</li>
+<li><a href="http://musicpd.org">mpd</a> (Music Player Daemon)
+
+<ul>
+<li><a href="http://ncmpcpp.rybczak.net/">ncmpcpp</a> (gui for mpd)</li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Tmux">tmux</a> (Terminal Multiplexer aka the better screen)</li>
+<li><a href="https://wiki.archlinux.org/index.php/Ranger">ranger</a> (file manager for the console)</li>
+<li><a href="http://zsh.sourceforge.net/">zsh</a> (programmable and fully customizable shell)
+
+<ul>
+<li><a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a> (script collection for zsh)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://www.mozilla.org/firefox">firefox</a></li>
+<li><a href="http://www.vimperator.org/">vimperator</a> (vim like bindings for firefox)
+
+<ul>
+<li>scripting the web</li>
+</ul>
+</li>
+<li>duckduckgoplus (search-engine alternative)</li>
+<li>noscript (block the tracking scripts and annoying popups)</li>
+<li>adblock plus (block the spam)</li>
+<li><a href="http://vim.org">vim</a> (very hard in the beginning but it&rsquo;s worth it)
+
+<ul>
+<li>ctrlp (fast file opener)</li>
+<li>jekyll.vim (jekyll blog edit help)</li>
+<li>solarized (solarized theme)</li>
+<li>tagbar</li>
+<li>vim-airline (slim powerline without python)</li>
+<li>vim-colors-solarized</li>
+<li>vim-fugitive</li>
+<li>vim-misc</li>
+<li>vim-notes (Write Notes into your Dropbox)</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Puppet in the end</h2>
+
+<p>for more easy configuration i developed a puppet script that installs all that
+for you. <em>HOW TO PUPPET LINK</em>
+In the future there will be an dotfiles repository from me for the coolest
+settings by far for the most of the tools.</p>
+
+<h2>a little configuration</h2>
+
+<p><em>DOTFILES REPO FOR THE MASSES</em></p>
+]]></content>
+  </entry>
+  
+</feed>

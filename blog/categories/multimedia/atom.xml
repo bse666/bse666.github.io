@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Multimedia | My Blog]]></title>
+  <link href="http://bse666.github.io/blog/categories/multimedia/atom.xml" rel="self"/>
+  <link href="http://bse666.github.io/"/>
+  <updated>2014-04-11T23:08:18+02:00</updated>
+  <id>http://bse666.github.io/</id>
+  <author>
+    <name><![CDATA[bse]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Silverlight Videos on Linux]]></title>
+    <link href="http://bse666.github.io/blog/2014/02/21/silverlight-videos-on-linux/"/>
+    <updated>2014-02-21T00:00:00+01:00</updated>
+    <id>http://bse666.github.io/blog/2014/02/21/silverlight-videos-on-linux</id>
+    <content type="html"><![CDATA[<h3>Silverlight and linux are not friends.</h3>
+
+<p>This is the Tutorial from which i could watch movies for silverlight successfully on my Ubuntu Machine.
+<a href="http://fds-team.de/cms/pipelight-installation.html">Pipelight Installation</a></p>
+
+<p>So for Ubuntu you have to do some little things &hellip;
+For my personal recommends i added chromium to split the usage of a normal
+browser and a dedicated one.</p>
+
+<p><code>bash
+ sudo add-apt-repository ppa:pipelight/stable
+ sudo apt-get update
+ sudo apt-get install --install-recommends pipelight-multi
+ sudo pipelight-plugin --enable silverlight
+ sudo apt-get install chromium-browser
+</code></p>
+
+<p>go out there and
+Happy Silverlighting&hellip;</p>
+]]></content>
+  </entry>
+  
+</feed>

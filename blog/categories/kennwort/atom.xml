@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Kennwort | My Blog]]></title>
+  <link href="http://bse666.github.io/blog/categories/kennwort/atom.xml" rel="self"/>
+  <link href="http://bse666.github.io/"/>
+  <updated>2014-04-11T23:08:18+02:00</updated>
+  <id>http://bse666.github.io/</id>
+  <author>
+    <name><![CDATA[bse]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Mac Kennwort Vergessen]]></title>
+    <link href="http://bse666.github.io/blog/2012/07/26/mac-kennwort-vergessen/"/>
+    <updated>2012-07-26T08:02:00+02:00</updated>
+    <id>http://bse666.github.io/blog/2012/07/26/mac-kennwort-vergessen</id>
+    <content type="html"><![CDATA[<p>How to recreate an Admin Account on a MAC:</p>
+
+<blockquote><p>hold CMD-S or WIN-S and power on the MAC.</p></blockquote>
+
+<p>now some manual editing:
+```
+fsck -y</p>
+
+<p>mount -uaw /</p>
+
+<p>rm /var/db/.AppleSetupDone</p>
+
+<p>reboot
+```</p>
+
+<p>The System now thinks it is not even Set Up yet.
+Now you will be creating a new User and go through the Setup process.
+This user becomes an Administrator on the Mac after the setup.</p>
+
+<p>Have fun.</p>
+
+<p>After writing this i saw the <a href="http://instant-thinking.de/2008/02/14/mac-os-x-passwort-vergessen/">Article from Dennis</a></p>
+]]></content>
+  </entry>
+  
+</feed>
