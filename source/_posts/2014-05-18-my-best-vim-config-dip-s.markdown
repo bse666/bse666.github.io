@@ -25,7 +25,7 @@ The first thing to do in .vimrc:
 {% endhighlight %}
 The following are my private favourites for now and evolving.
 
-
+<!-- more -->
 {% highlight ruby %}
  " Jekyll Blog Bindings  \{\{\{
  let g:jekyll_path = "$HOME/git/blog"
