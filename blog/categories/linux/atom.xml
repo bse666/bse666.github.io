@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Linux | My Blog]]></title>
+  <title><![CDATA[Category: Linux | Home of BSE]]></title>
   <link href="http://bse666.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://bse666.github.io/"/>
-  <updated>2014-04-11T23:08:18+02:00</updated>
+  <updated>2014-05-21T12:24:27+02:00</updated>
   <id>http://bse666.github.io/</id>
   <author>
     <name><![CDATA[bse]]></name>
@@ -148,9 +148,9 @@ If you want to know more contect me and let me know.</div>
   
   <entry>
     <title type="html"><![CDATA[Git Für Alle(s)]]></title>
-    <link href="http://bse666.github.io/Git-f-r-alle-s.html"/>
+    <link href="http://bse666.github.io/blog/2012/10/05/Git-fuer-alles/"/>
     <updated>2012-10-05T21:02:00+02:00</updated>
-    <id>http://bse666.github.io/Git-fuer-alles</id>
+    <id>http://bse666.github.io/blog/2012/10/05/Git-fuer-alles</id>
     <content type="html"><![CDATA[<div class="css-full-post-content js-full-post-content">
 "Git ist eine <a href="http://de.wikipedia.org/wiki/Freie_Software" title="Freie Software">freie Software</a> zur verteilten <a href="http://de.wikipedia.org/wiki/Versionsverwaltung" title="Versionsverwaltung">Versionsverwaltung</a> von Dateien, die ursprünglich für die Quellcode-Verwaltung des Kernels <a href="http://de.wikipedia.org/wiki/Linux_%28Kernel%29" title="Linux (Kernel)">Linux</a> entwickelt wurde."<br />- Wikipedia -<br /><br />Git kann gut und gerne viele Daten verwalten.<br />Der Vorteil von Git gegenüber "normalen" VCS (Version Control System) liegt klar auf der Hand.<br /><br /><ul><li>Die Bedienung ist um einiges einfacher.</li><li>Komplexe Merge-Strukturen werden meist automatisch abgearbeitet.</li><li>Verwaltung von vielen Binärdateien</li><li>Schnelles Austeilen der Repositories durch "packen"</li></ul>&nbsp;Als Beispiel nehmen wir hier ein Linux System auf dem Git installiert wird.<br />Debian hat sich mittlerweile bei mir sehr fein eingebürgert auf Serversystemen.<br /><blockquote class="tr_bq">$ apt-get install git</blockquote>Das war es auch schon. :)<br />Bevor wir starten sollten erstmal die Userdaten gesetzt werden.<br /><blockquote class="tr_bq">$ git config --global user.name "Name Hier Hin"<br />$ git config --global user.email&nbsp; Name@meinedomain.firma.com</blockquote>Es geht nun weiter mit dem Erstellen eines Repository.<br /><blockquote class="tr_bq">$ mkdir project.git<br />$ cd project.git<br />$ git init</blockquote>Mit Hilfe von "git init" kann das aktuelle Verzeichnis schnell zu einem Git Repository umgewandelt werden. Es wird nun ein ".git" Ordner erstellt in dem Git seine Datenbank pflegt. <br />Nun werden wir neue Dateien hinzufügen. Diese können natürlich auch hineinkopiert werden.<br /><blockquote class="tr_bq">$ echo "test" &gt; NewFile<br />$ git add NewFile</blockquote>Mit "git add <file>" können Dateien oder Ordnerstrukturen zur Versionierung hinzugefügt werden. Wenn man nun das ganze "committed", also die Änderungen abspeichern will macht man dies wie folgt:</file><br /><blockquote class="tr_bq">$ git commit -a</blockquote>Nun öffnet sich der favorisierte Consolen Editor in dem man dann einen Commit-Grund angeben kann wie z.B. "Erster Commit. Repo mit Daten gefüllt.". Dann speichert man dies ab und Git errechnet die Hash-Werte der Dateien und pflegt all dies unter seinem .git Verzeichnis.<br />Nun kann man auch gerne mit Branches rumspielen.<br /><blockquote class="tr_bq">$ git branch #listet alle Branches<br />$ git branch neueBranch # erstellt eine neue Branch mit dem Namen: "neueBranch"</blockquote>Branches sind gut für die Erarbeitung neuer Features.<br /><br /><h4 style="background-color: red;">Die wichtigste Regel bei der Nutzung von git:</h4><div style="text-align: left;"><blockquote class="tr_bq"><h4><span style="background-color: red;">Commit, Commit, Commit.</span><br style="background-color: red;" /><span style="background-color: red;">Es kann nie genug commit'ted werden.</span></h4></blockquote></div>
 </div>

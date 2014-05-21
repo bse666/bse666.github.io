@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Blog]]></title>
+  <title><![CDATA[Home of BSE]]></title>
   <link href="http://bse666.github.io/atom.xml" rel="self"/>
   <link href="http://bse666.github.io/"/>
-  <updated>2014-04-11T23:08:18+02:00</updated>
+  <updated>2014-05-21T12:24:27+02:00</updated>
   <id>http://bse666.github.io/</id>
   <author>
     <name><![CDATA[bse]]></name>
@@ -12,6 +12,85 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[My Best Vim Config Dip's]]></title>
+    <link href="http://bse666.github.io/blog/2014/05/18/my-best-vim-config-dip-s/"/>
+    <updated>2014-05-18T00:00:00+02:00</updated>
+    <id>http://bse666.github.io/blog/2014/05/18/my-best-vim-config-dip-s</id>
+    <content type="html"><![CDATA[<p>Here are some of my favourite bindings in vim.</p>
+
+<p>The first thing to do in .vimrc:</p>
+
+<div>
+  <pre><code class='ruby'>&quot; Unmap the Arrow Keys \{\{\{
+ no &lt;down&gt; &lt;Nop&gt;
+ no &lt;left&gt; &lt;Nop&gt;
+ no &lt;right&gt; &lt;Nop&gt;
+ no &lt;up&gt; &lt;Nop&gt;
+ ino &lt;down&gt; &lt;Nop&gt;
+ ino &lt;left&gt; &lt;Nop&gt;
+ ino &lt;right&gt; &lt;Nop&gt;
+ ino &lt;up&gt; &lt;Nop&gt;
+ vno &lt;down&gt; &lt;Nop&gt;
+ vno &lt;left&gt; &lt;Nop&gt;
+ vno &lt;right&gt; &lt;Nop&gt;
+ vno &lt;up&gt; &lt;Nop&gt;</code></pre>
+</div>
+
+
+<p>The following are my private favourites for now and evolving.</p>
+
+<!-- more -->
+
+
+<div>
+  <pre><code class='ruby'>&quot; Jekyll Blog Bindings  \{\{\{
+ let g:jekyll_path = &quot;$HOME/git/blog&quot;
+ &quot; Jekyll Bundle mappings
+ map &lt;Leader&gt;jn  :JekyllPost&lt;CR&gt;
+ map &lt;Leader&gt;jl  :JekyllList&lt;CR&gt;
+ map &lt;Leader&gt;jc  :JekyllCommit&lt;CR&gt;
+ map &lt;Leader&gt;jp  :JekyllPublish&lt;CR&gt;
+
+ &quot; Quickly edit/reload the vimrc file
+ nmap &lt;silent&gt; &lt;leader&gt;ev :e $MYVIMRC&lt;CR&gt;
+ nmap &lt;silent&gt; &lt;leader&gt;sv :so $MYVIMRC&lt;CR&gt;
+
+ &quot; Paste Mode for pasting more Text at once (use in insert mode)
+ set pastetoggle=&lt;F2&gt;
+
+ &quot; Use sane regexes.
+ nnoremap / /\v
+ vnoremap / /\v
+
+ &quot; Easier to type
+ noremap H ^
+ noremap L $
+ vnoremap L g_
+
+ &quot; gi already moves to &quot;last place you exited insert mode&quot;, so we'll map gI to
+ &quot; something similar: move to last change
+ nnoremap gI `.
+
+ &quot; Move the cursor one displaying line on the screen not in the text.
+ &quot; useful with wrapped lines
+ noremap j gj
+ noremap k gk
+ noremap gj j
+ noremap gk k
+
+ &quot; Easy buffer navigation in split view's
+ noremap &lt;C-h&gt; &lt;C-w&gt;h
+ noremap &lt;C-j&gt; &lt;C-w&gt;j
+ noremap &lt;C-k&gt; &lt;C-w&gt;k
+ noremap &lt;C-l&gt; &lt;C-w&gt;l</code></pre>
+</div>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Terminal Fun]]></title>
@@ -290,9 +369,9 @@ If you want to know more contect me and let me know.</div>
   
   <entry>
     <title type="html"><![CDATA[Git Für Alle(s)]]></title>
-    <link href="http://bse666.github.io/Git-f-r-alle-s.html"/>
+    <link href="http://bse666.github.io/blog/2012/10/05/Git-fuer-alles/"/>
     <updated>2012-10-05T21:02:00+02:00</updated>
-    <id>http://bse666.github.io/Git-fuer-alles</id>
+    <id>http://bse666.github.io/blog/2012/10/05/Git-fuer-alles</id>
     <content type="html"><![CDATA[<div class="css-full-post-content js-full-post-content">
 &#8220;Git ist eine <a href="http://de.wikipedia.org/wiki/Freie_Software" title="Freie Software">freie Software</a> zur verteilten <a href="http://de.wikipedia.org/wiki/Versionsverwaltung" title="Versionsverwaltung">Versionsverwaltung</a> von Dateien, die ursprünglich für die Quellcode-Verwaltung des Kernels <a href="http://de.wikipedia.org/wiki/Linux_%28Kernel%29" title="Linux (Kernel)">Linux</a> entwickelt wurde.&#8221;<br />- Wikipedia -<br /><br />Git kann gut und gerne viele Daten verwalten.<br />Der Vorteil von Git gegenüber &#8220;normalen&#8221; VCS (Version Control System) liegt klar auf der Hand.<br /><br /><ul><li>Die Bedienung ist um einiges einfacher.</li><li>Komplexe Merge-Strukturen werden meist automatisch abgearbeitet.</li><li>Verwaltung von vielen Binärdateien</li><li>Schnelles Austeilen der Repositories durch &#8220;packen&#8221;</li></ul>&nbsp;Als Beispiel nehmen wir hier ein Linux System auf dem Git installiert wird.<br />Debian hat sich mittlerweile bei mir sehr fein eingebürgert auf Serversystemen.<br /><blockquote class="tr_bq">$ apt-get install git</blockquote>Das war es auch schon. :)<br />Bevor wir starten sollten erstmal die Userdaten gesetzt werden.<br /><blockquote class="tr_bq">$ git config &#8211;global user.name &#8220;Name Hier Hin&#8221;<br />$ git config &#8211;global user.email&nbsp; Name@meinedomain.firma.com</blockquote>Es geht nun weiter mit dem Erstellen eines Repository.<br /><blockquote class="tr_bq">$ mkdir project.git<br />$ cd project.git<br />$ git init</blockquote>Mit Hilfe von &#8220;git init&#8221; kann das aktuelle Verzeichnis schnell zu einem Git Repository umgewandelt werden. Es wird nun ein &#8220;.git&#8221; Ordner erstellt in dem Git seine Datenbank pflegt. <br />Nun werden wir neue Dateien hinzufügen. Diese können natürlich auch hineinkopiert werden.<br /><blockquote class="tr_bq">$ echo &#8220;test&#8221; &gt; NewFile<br />$ git add NewFile</blockquote>Mit &#8220;git add <file>&#8221; können Dateien oder Ordnerstrukturen zur Versionierung hinzugefügt werden. Wenn man nun das ganze &#8220;committed&#8221;, also die Änderungen abspeichern will macht man dies wie folgt:</file><br /><blockquote class="tr_bq">$ git commit -a</blockquote>Nun öffnet sich der favorisierte Consolen Editor in dem man dann einen Commit-Grund angeben kann wie z.B. &#8220;Erster Commit. Repo mit Daten gefüllt.&#8221;. Dann speichert man dies ab und Git errechnet die Hash-Werte der Dateien und pflegt all dies unter seinem .git Verzeichnis.<br />Nun kann man auch gerne mit Branches rumspielen.<br /><blockquote class="tr_bq">$ git branch #listet alle Branches<br />$ git branch neueBranch # erstellt eine neue Branch mit dem Namen: &#8220;neueBranch&#8221;</blockquote>Branches sind gut für die Erarbeitung neuer Features.<br /><br /><h4 style="background-color: red;">Die wichtigste Regel bei der Nutzung von git:</h4><div style="text-align: left;"><blockquote class="tr_bq"><h4><span style="background-color: red;">Commit, Commit, Commit.</span><br style="background-color: red;" /><span style="background-color: red;">Es kann nie genug commit&#8217;ted werden.</span></h4></blockquote></div>
 </div>
