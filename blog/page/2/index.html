@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Git Für Alle(s) - Home of BSE</title>
+  <title>Home of BSE</title>
   <meta name="author" content="bse">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://bse666.github.io/blog/2012/10/05/Git-fuer-alles">
+  <link rel="canonical" href="http://bse666.github.io/blog/page/2">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Home of BSE" type="application/atom+xml">
@@ -75,12 +75,15 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div>
-<article class="hentry" role="article">
+      <div class="blog-index">
   
+  
+  
+    <article>
+      
   <header>
     
-      <h1 class="entry-title">Git Für Alle(s)</h1>
+      <h1 class="entry-title"><a href="/blog/2012/10/05/Git-fuer-alles/">Git Für Alle(s)</a></h1>
     
     
       <p class="meta">
@@ -105,69 +108,90 @@
   </header>
 
 
-<div class="entry-content"><div class="css-full-post-content js-full-post-content">
+  <div class="entry-content"><div class="css-full-post-content js-full-post-content">
 &#8220;Git ist eine <a href="http://de.wikipedia.org/wiki/Freie_Software" title="Freie Software">freie Software</a> zur verteilten <a href="http://de.wikipedia.org/wiki/Versionsverwaltung" title="Versionsverwaltung">Versionsverwaltung</a> von Dateien, die ursprünglich für die Quellcode-Verwaltung des Kernels <a href="http://de.wikipedia.org/wiki/Linux_%28Kernel%29" title="Linux (Kernel)">Linux</a> entwickelt wurde.&#8221;<br />- Wikipedia -<br /><br />Git kann gut und gerne viele Daten verwalten.<br />Der Vorteil von Git gegenüber &#8220;normalen&#8221; VCS (Version Control System) liegt klar auf der Hand.<br /><br /><ul><li>Die Bedienung ist um einiges einfacher.</li><li>Komplexe Merge-Strukturen werden meist automatisch abgearbeitet.</li><li>Verwaltung von vielen Binärdateien</li><li>Schnelles Austeilen der Repositories durch &#8220;packen&#8221;</li></ul>&nbsp;Als Beispiel nehmen wir hier ein Linux System auf dem Git installiert wird.<br />Debian hat sich mittlerweile bei mir sehr fein eingebürgert auf Serversystemen.<br /><blockquote class="tr_bq">$ apt-get install git</blockquote>Das war es auch schon. :)<br />Bevor wir starten sollten erstmal die Userdaten gesetzt werden.<br /><blockquote class="tr_bq">$ git config &#8211;global user.name &#8220;Name Hier Hin&#8221;<br />$ git config &#8211;global user.email&nbsp; Name@meinedomain.firma.com</blockquote>Es geht nun weiter mit dem Erstellen eines Repository.<br /><blockquote class="tr_bq">$ mkdir project.git<br />$ cd project.git<br />$ git init</blockquote>Mit Hilfe von &#8220;git init&#8221; kann das aktuelle Verzeichnis schnell zu einem Git Repository umgewandelt werden. Es wird nun ein &#8220;.git&#8221; Ordner erstellt in dem Git seine Datenbank pflegt. <br />Nun werden wir neue Dateien hinzufügen. Diese können natürlich auch hineinkopiert werden.<br /><blockquote class="tr_bq">$ echo &#8220;test&#8221; &gt; NewFile<br />$ git add NewFile</blockquote>Mit &#8220;git add <file>&#8221; können Dateien oder Ordnerstrukturen zur Versionierung hinzugefügt werden. Wenn man nun das ganze &#8220;committed&#8221;, also die Änderungen abspeichern will macht man dies wie folgt:</file><br /><blockquote class="tr_bq">$ git commit -a</blockquote>Nun öffnet sich der favorisierte Consolen Editor in dem man dann einen Commit-Grund angeben kann wie z.B. &#8220;Erster Commit. Repo mit Daten gefüllt.&#8221;. Dann speichert man dies ab und Git errechnet die Hash-Werte der Dateien und pflegt all dies unter seinem .git Verzeichnis.<br />Nun kann man auch gerne mit Branches rumspielen.<br /><blockquote class="tr_bq">$ git branch #listet alle Branches<br />$ git branch neueBranch # erstellt eine neue Branch mit dem Namen: &#8220;neueBranch&#8221;</blockquote>Branches sind gut für die Erarbeitung neuer Features.<br /><br /><h4 style="background-color: red;">Die wichtigste Regel bei der Nutzung von git:</h4><div style="text-align: left;"><blockquote class="tr_bq"><h4><span style="background-color: red;">Commit, Commit, Commit.</span><br style="background-color: red;" /><span style="background-color: red;">Es kann nie genug commit&#8217;ted werden.</span></h4></blockquote></div>
 </div>
 </div>
+  
+  
 
 
-  <footer>
-    <p class="meta">
+    </article>
+  
+  
+    <article>
       
-  
-
-<span class="byline author vcard">Posted by <span class="fn">bse</span></span>
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-<time datetime="2012-10-05T21:02:55+02:00" class="updated">Updated Oct 5<span>th</span>, 2012</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/debian/'>debian</a>, <a class='category' href='/blog/categories/git/'>git</a>, <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/ubuntu/'>ubuntu</a>, <a class='category' href='/blog/categories/vcs/'>vcs</a>, <a class='category' href='/blog/categories/version-control-system/'>version control system</a>
-  
-</span>
-
-
-    </p>
+  <header>
     
-      <div class="sharing">
-  
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://bse666.github.io/blog/2012/10/05/Git-fuer-alles/" data-via="bse666" data-counturl="http://bse666.github.io/blog/2012/10/05/Git-fuer-alles/" >Tweet</a>
-  
-  
-  <div class="g-plusone" data-size="medium"></div>
-  
-  
-</div>
-
+      <h1 class="entry-title"><a href="/blog/2012/07/26/mac-kennwort-vergessen/">Mac Kennwort Vergessen</a></h1>
     
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2012/07/26/mac-kennwort-vergessen/" title="Previous Post: Mac Kennwort vergessen">&laquo; Mac Kennwort vergessen</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2013/04/30/Music-in-linux/" title="Next Post: Music in Linux">Music in Linux &raquo;</a>
-      
-    </p>
-  </footer>
-</article>
+    
+      <p class="meta">
+        
 
+
+
+
+
+
+
+
+  
+
+
+
+  
+<time datetime="2012-07-26T08:02:00+02:00" pubdate data-updated="true">Jul 26<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>How to recreate an Admin Account on a MAC:</p>
+
+<blockquote><p>hold CMD-S or WIN-S and power on the MAC.</p></blockquote>
+
+<p>now some manual editing:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>fsck -y
+</span><span class='line'>
+</span><span class='line'>mount -uaw /
+</span><span class='line'>
+</span><span class='line'>rm /var/db/.AppleSetupDone
+</span><span class='line'>
+</span><span class='line'>reboot</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The System now thinks it is not even Set Up yet.
+Now you will be creating a new User and go through the Setup process.
+This user becomes an Administrator on the Mac after the setup.</p>
+
+<p>Have fun.</p>
+
+<p>After writing this i saw the <a href="http://instant-thinking.de/2008/02/14/mac-os-x-passwort-vergessen/">Article from Dennis</a></p>
 </div>
+  
+  
 
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/">Newer &rarr;</a>
+    
+  </div>
+</div>
 <aside class="sidebar">
   
     <section>
@@ -179,7 +203,7 @@
       </li>
     
       <li class="post">
-        <a href="/blog/2014/05/18/my-best-vim-config-dip-s/">My Best Vim Config Dip's</a>
+        <a href="/blog/2014/05/18/my-best-vim-config-dip-s/">My Best Vim Config Dip&#8217;s</a>
       </li>
     
       <li class="post">
@@ -200,7 +224,7 @@
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating...</li>
+    <li class="loading">Status updating&#8230;</li>
   </ul>
   
   <a href="https://github.com/bse666">@bse666</a> on GitHub
@@ -232,7 +256,6 @@
 
   
 </aside>
-
 
     </div>
   </div>

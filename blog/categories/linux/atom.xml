@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | Home of BSE]]></title>
   <link href="http://bse666.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://bse666.github.io/"/>
-  <updated>2014-05-21T12:24:27+02:00</updated>
+  <updated>2014-06-29T14:19:00+02:00</updated>
   <id>http://bse666.github.io/</id>
   <author>
     <name><![CDATA[bse]]></name>
@@ -12,6 +12,115 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Enable Sshd on Android]]></title>
+    <link href="http://bse666.github.io/blog/2014/04/28/how-to-sshd-on-android/"/>
+    <updated>2014-04-28T00:00:00+02:00</updated>
+    <id>http://bse666.github.io/blog/2014/04/28/how-to-sshd-on-android</id>
+    <content type="html"><![CDATA[<p>If you love android as much as me for it&rsquo;s customizing capabilities you will
+love this tutorial. I try to do much on the commandline and use as many
+automation as possible for this purpose.
+I got the Code references from the <a href="http://wiki.cyanogenmod.org/w/Doc:_sshd">CM Wiki</a>.
+So here it is, my sshd on Android Tutorial.</p>
+
+<h2>Why use this long tutorial when there is an app for it?</h2>
+
+<p>Because there is an APP for it. One more APP you have to install for things that
+are already on your phone.</p>
+
+<h2>Step 1</h2>
+
+<p>Install a custom ROM like Cyanogenmod or PAC-ROM. Here are many possibilities to
+customize your android experience.
+You have to unlock the developer options which will void your warranty in some
+countries.</p>
+
+<!-- more -->
+
+
+<h2>Here you are.</h2>
+
+<p>Assuming that you are already installed and ready. (Android tools for your
+distribution and such), there are a few things to do on your phone.
+Plug your phone into your computer and follow the next steps.</p>
+
+<h2>Developer Options</h2>
+
+<p>To unlock do the following:</p>
+
+<ul>
+<li>go to settings &ndash;> about device and tap 7 times continously on build number.</li>
+<li>enable USB Debugging in settings &ndash;> developer options</li>
+<li>also enable root for adb</li>
+</ul>
+
+
+<h2>Enter the shell</h2>
+
+<p>fire up your favourite terminal emulator and hack this into it.</p>
+
+<h3>connect to your phone</h3>
+
+<p>adb shell
+su</p>
+
+<h3>create the directory structure</h3>
+
+<p>mkdir -p /data/ssh/empty
+chmod 700 /data/ssh
+chmod 700 /data/ssh/empty</p>
+
+<h3>create the host keys</h3>
+
+<p>ssh-keygen -t dsa -f /data/ssh/ssh_host_dsa_key -N &ldquo;&rdquo;
+chmod 600 /data/ssh/ssh_host_dsa_key
+ssh-keygen -t rsa -f /data/ssh/ssh_host_rsa_key -N &ldquo;&rdquo;
+chmod 600 /data/ssh/ssh_host_rsa_key</p>
+
+<h3>configure your sshd server</h3>
+
+<p>cat /system/etc/ssh/sshd_config | \
+sed &rsquo;s/#PermitRootLogin yes$/PermitRootLogin yes/&lsquo; | \
+sed &rsquo;s/#PubkeyAuthentication yes/PubkeyAuthentication yes/&rsquo; | \
+sed &rsquo;s/#PasswordAuthentication yes/PasswordAuthentication no/&lsquo; | \
+sed &rsquo;s/#PermitEmptyPasswords no/PermitEmptyPasswords no/&rsquo; | \
+sed &rsquo;s/#ChallengeResponseAuthentication
+yes/ChallengeResponseAuthentication no/&lsquo; | \
+sed &rsquo;s;/usr/libexec/sftp-server;internal-sftp;&rsquo; > \
+/data/ssh/sshd_config
+chmod 600 /data/ssh/sshd_config</p>
+
+<h3>create your private key</h3>
+
+<p>mkdir -p /data/.ssh
+chmod 700 /data/.ssh
+ssh-keygen -t rsa -f /data/.ssh/id_rsa
+chmod 600 /data/.ssh/id_rsa
+cat /data/.ssh/id_rsa.pub > /data/.ssh/authorized_keys
+chmod 600 /data/.ssh/authorized_keys
+```</p>
+
+<h2>Fire it up</h2>
+
+<p>With the following command you are able to start and stop the server. How you
+inject them into your android system is up to you, but i recommend something
+like Tasker to enable or disable the Server in trusted environments.</p>
+
+<p><code>
+/system/bin/sshd -f /data/ssh/sshd_config
+</code></p>
+
+<p><code>
+killall sshd
+</code></p>
+
+<p>Both of these lines have to run as root.</p>
+
+<p>And here you are with your own made ssh Server with only just yourself. Beside
+that you also have learned how to enter your phone over usb cable and gain root.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Terminal Fun]]></title>
@@ -142,18 +251,6 @@ Now search through the windows with screen:<br />ctrl-a <right> is it here? nope
     <content type="html"><![CDATA[<div class="css-full-post-content js-full-post-content">
   What is the best way to push your music through your home?<br />I tested many things like a centralized PC with xbmc and multicasting over the local network for nearly synchronized playback from many devices but this had an issue. The Devices that would go over WLAN had a serious lag and it was not practical because you couldn't use the wlan for anything more with the multicast hammering through the air.<br /><br />After a few tries with php software and streaming server's i now have the perfect setup for me.<br />You know MPD? (Music Player Deamon!)<br />This nifty little program is so light that it also can be run on a pentium 2 or raspberry pi with not much of ram in use.<br /><br />For the ones that use 2-4 client's to catch the music there is the option to let mpd build its own mp3 stream. But if you fire it to an icecast or shoutcast server this little one can bring the sound to the masses.
 If you want to know more contect me and let me know.</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Git Für Alle(s)]]></title>
-    <link href="http://bse666.github.io/blog/2012/10/05/Git-fuer-alles/"/>
-    <updated>2012-10-05T21:02:00+02:00</updated>
-    <id>http://bse666.github.io/blog/2012/10/05/Git-fuer-alles</id>
-    <content type="html"><![CDATA[<div class="css-full-post-content js-full-post-content">
-"Git ist eine <a href="http://de.wikipedia.org/wiki/Freie_Software" title="Freie Software">freie Software</a> zur verteilten <a href="http://de.wikipedia.org/wiki/Versionsverwaltung" title="Versionsverwaltung">Versionsverwaltung</a> von Dateien, die ursprünglich für die Quellcode-Verwaltung des Kernels <a href="http://de.wikipedia.org/wiki/Linux_%28Kernel%29" title="Linux (Kernel)">Linux</a> entwickelt wurde."<br />- Wikipedia -<br /><br />Git kann gut und gerne viele Daten verwalten.<br />Der Vorteil von Git gegenüber "normalen" VCS (Version Control System) liegt klar auf der Hand.<br /><br /><ul><li>Die Bedienung ist um einiges einfacher.</li><li>Komplexe Merge-Strukturen werden meist automatisch abgearbeitet.</li><li>Verwaltung von vielen Binärdateien</li><li>Schnelles Austeilen der Repositories durch "packen"</li></ul>&nbsp;Als Beispiel nehmen wir hier ein Linux System auf dem Git installiert wird.<br />Debian hat sich mittlerweile bei mir sehr fein eingebürgert auf Serversystemen.<br /><blockquote class="tr_bq">$ apt-get install git</blockquote>Das war es auch schon. :)<br />Bevor wir starten sollten erstmal die Userdaten gesetzt werden.<br /><blockquote class="tr_bq">$ git config --global user.name "Name Hier Hin"<br />$ git config --global user.email&nbsp; Name@meinedomain.firma.com</blockquote>Es geht nun weiter mit dem Erstellen eines Repository.<br /><blockquote class="tr_bq">$ mkdir project.git<br />$ cd project.git<br />$ git init</blockquote>Mit Hilfe von "git init" kann das aktuelle Verzeichnis schnell zu einem Git Repository umgewandelt werden. Es wird nun ein ".git" Ordner erstellt in dem Git seine Datenbank pflegt. <br />Nun werden wir neue Dateien hinzufügen. Diese können natürlich auch hineinkopiert werden.<br /><blockquote class="tr_bq">$ echo "test" &gt; NewFile<br />$ git add NewFile</blockquote>Mit "git add <file>" können Dateien oder Ordnerstrukturen zur Versionierung hinzugefügt werden. Wenn man nun das ganze "committed", also die Änderungen abspeichern will macht man dies wie folgt:</file><br /><blockquote class="tr_bq">$ git commit -a</blockquote>Nun öffnet sich der favorisierte Consolen Editor in dem man dann einen Commit-Grund angeben kann wie z.B. "Erster Commit. Repo mit Daten gefüllt.". Dann speichert man dies ab und Git errechnet die Hash-Werte der Dateien und pflegt all dies unter seinem .git Verzeichnis.<br />Nun kann man auch gerne mit Branches rumspielen.<br /><blockquote class="tr_bq">$ git branch #listet alle Branches<br />$ git branch neueBranch # erstellt eine neue Branch mit dem Namen: "neueBranch"</blockquote>Branches sind gut für die Erarbeitung neuer Features.<br /><br /><h4 style="background-color: red;">Die wichtigste Regel bei der Nutzung von git:</h4><div style="text-align: left;"><blockquote class="tr_bq"><h4><span style="background-color: red;">Commit, Commit, Commit.</span><br style="background-color: red;" /><span style="background-color: red;">Es kann nie genug commit'ted werden.</span></h4></blockquote></div>
-</div>
 
 ]]></content>
   </entry>

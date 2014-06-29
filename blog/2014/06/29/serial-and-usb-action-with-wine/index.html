@@ -5,11 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: Mpd - Home of BSE</title>
+  <title>Serial and USB Action With Wine - Home of BSE</title>
   <meta name="author" content="bse">
 
   
-  <meta name="description" content="Category: mpd">
+  <meta name="description" content="wine directories
+user group First of all you have to add your user to the dialout group which is used in
+ubuntu for all serial or usb devices that &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://bse666.github.ioblog/categories/mpd">
+  <link rel="canonical" href="http://bse666.github.io/blog/2014/06/29/serial-and-usb-action-with-wine">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Home of BSE" type="application/atom+xml">
@@ -76,35 +78,107 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Mpd</h1>
+    
+      <h1 class="entry-title">Serial and USB Action With Wine</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-29T13:52:00+02:00" pubdate data-updated="true">Jun 29<span>th</span>, 2014</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
-
-  
-  <h2>2013</h2>
-
-<article>
-  
-<h1><a href="/blog/2013/04/30/Music-in-linux/">Music in Linux</a></h1>
-<time datetime="2013-04-30T21:34:00+02:00" pubdate><span class='month'>Apr</span> <span class='day'>30</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/mpd/'>mpd</a>, <a class='category' href='/blog/categories/music/'>music</a></span>
-</footer>
+<div class="entry-content"><ul>
+<li>wine directories</li>
+<li>user group</li>
+</ul>
 
 
-</article>
+<p>First of all you have to add your user to the dialout group which is used in
+ubuntu for all serial or usb devices that can perform some kind of /dialouty/
+activity. For the user to have access to that group it is better to logout and
+login again to get the GUI to receive the new Groups.
+In the next step you have to browse to your <em>wineprefix directory</em>
+that in my case resides in $HOME/.PlayOnLinux/wineprefix/nTrip .</p>
 
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo adduser $USER dialout          # adds your user to the dialout group
+</span><span class='line'>cd $HOME/.wine/                     # enter your directory here
+</span><span class='line'>ln -s /dev/ttyUSB0 dosdevices/com1  # /dev/ttyS0 for the first serial port</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Have Fun.</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">bse</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-29T13:52:00+02:00" pubdate data-updated="true">Jun 29<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/wine-linux/'>wine,linux</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://bse666.github.io/blog/2014/06/29/serial-and-usb-action-with-wine/" data-via="bse666" data-counturl="http://bse666.github.io/blog/2014/06/29/serial-and-usb-action-with-wine/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/05/18/my-best-vim-config-dip-s/" title="Previous Post: my best vim config dip's">&laquo; my best vim config dip's</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>
