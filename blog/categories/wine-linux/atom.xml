@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Wine,linux | Home of BSE]]></title>
   <link href="http://bse666.github.io/blog/categories/wine-linux/atom.xml" rel="self"/>
   <link href="http://bse666.github.io/"/>
-  <updated>2014-06-29T14:19:00+02:00</updated>
+  <updated>2014-06-29T14:26:05+02:00</updated>
   <id>http://bse666.github.io/</id>
   <author>
     <name><![CDATA[bse]]></name>
@@ -18,17 +18,14 @@
     <link href="http://bse666.github.io/blog/2014/06/29/serial-and-usb-action-with-wine/"/>
     <updated>2014-06-29T13:52:00+02:00</updated>
     <id>http://bse666.github.io/blog/2014/06/29/serial-and-usb-action-with-wine</id>
-    <content type="html"><![CDATA[<ul>
-<li>wine directories</li>
-<li>user group</li>
-</ul>
-
-
-<p>First of all you have to add your user to the dialout group which is used in
+    <content type="html"><![CDATA[<p>First of all you have to add your user to the dialout group which is used in
 ubuntu for all serial or usb devices that can perform some kind of /dialouty/
-activity. For the user to have access to that group it is better to logout and
-login again to get the GUI to receive the new Groups.
-In the next step you have to browse to your <em>wineprefix directory</em>
+activity.</p>
+
+<p>For the user to have access to that group it is better to logout and
+login again to get the GUI to receive the new Groups.</p>
+
+<p>In the next step you have to browse to your <em>wineprefix directory</em>
 that in my case resides in $HOME/.PlayOnLinux/wineprefix/nTrip .</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
