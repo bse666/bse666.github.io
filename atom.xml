@@ -4,7 +4,7 @@
   <title><![CDATA[Home of BSE]]></title>
   <link href="http://bse666.github.io/atom.xml" rel="self"/>
   <link href="http://bse666.github.io/"/>
-  <updated>2014-06-29T14:26:05+02:00</updated>
+  <updated>2014-06-29T14:30:36+02:00</updated>
   <id>http://bse666.github.io/</id>
   <author>
     <name><![CDATA[bse]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Create an ISO in Linux.]]></title>
+    <link href="http://bse666.github.io/blog/2014/06/29/how-to-create-an-iso-in-linux./"/>
+    <updated>2014-06-29T14:27:00+02:00</updated>
+    <id>http://bse666.github.io/blog/2014/06/29/how-to-create-an-iso-in-linux.</id>
+    <content type="html"><![CDATA[<p>fastest way:</p>
+
+<p>Open a Terminal and type in:
+<code>cat /dev/sr0 &gt; $HOME/test.iso</code></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Serial and USB Action With Wine]]></title>
