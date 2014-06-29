@@ -36,7 +36,6 @@ To unlock do the following:
 
 ## Enter the shell
 fire up your favourite terminal emulator and hack this into it.
-``` shell
 ### connect to your phone
 adb shell
 su
