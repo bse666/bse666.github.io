@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | Home of BSE]]></title>
   <link href="http://bse666.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://bse666.github.io/"/>
-  <updated>2014-08-14T22:23:50+02:00</updated>
+  <updated>2014-08-15T01:02:11+02:00</updated>
   <id>http://bse666.github.io/</id>
   <author>
     <name><![CDATA[bse]]></name>
@@ -21,7 +21,7 @@
     <content type="html"><![CDATA[<p>If you are in the situation to deal with many zfs snapshots that are not needed
 anymore you can try this. !!! USE AT YOUR OWN RISK !!!</p>
 
-<p>``` bash Deletes all Snapshots found!!!</p>
+<p>``` bash Deletes all Snapshots found!!! (thanks to SysadminBlog) <a href="http://sysadminman.net/blog/2008/remove-all-zfs-snapshots-50">http://sysadminman.net/blog/2008/remove-all-zfs-snapshots-50</a></p>
 
 <h1>!/bin/bash</h1>
 
@@ -34,9 +34,6 @@ anymore you can try this. !!! USE AT YOUR OWN RISK !!!</p>
 zfs destroy $snapshot
 done
 ```</p>
-
-<p>Thanks to
-<a href="http://sysadminman.net/blog/2008/remove-all-zfs-snapshots-50">SysadminBlog</a> for the tip.</p>
 
 <p><code>bash List all snapshots
 zfs list -H -t snapshot
@@ -262,16 +259,15 @@ Happy Silverlighting&hellip;</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[IPv6 Private Adresses in Linux]]></title>
-    <link href="http://bse666.github.io/blog/2014/02/10/ipv6-private-adresses-in-linux/"/>
-    <updated>2014-02-10T00:00:00+01:00</updated>
-    <id>http://bse666.github.io/blog/2014/02/10/ipv6-private-adresses-in-linux</id>
-    <content type="html"><![CDATA[<p>To activate the private Adress room in Ubuntu you have to add the following
-line to your /etc/sysctl.conf:</p>
-
-<blockquote><p>net.ipv6.conf.all.use_tempaddr=2</p></blockquote>
-
-<p>!!!!!!!!!!!!! Funktioniert noch nicht so richtig!neinein! &hellip;</p>
+    <title type="html"><![CDATA[TMUX - TerminalMUltipleXer]]></title>
+    <link href="http://bse666.github.io/blog/2013/09/22/tmux-terminalmultiplexer/"/>
+    <updated>2013-09-22T08:58:00+02:00</updated>
+    <id>http://bse666.github.io/blog/2013/09/22/tmux-terminalmultiplexer</id>
+    <content type="html"><![CDATA[<p>TMUX. Another great invention. Tmux is like screen but better.
+TerminalMUltipleXer it&rsquo;s called and that&rsquo;s what it does.
+With  this little program you are able to log into a Remote system and let  sessions open for later use. For Screen you have to extensively tweak it  to do your belongings and tmux just has it built in. My killer feature  for this app is it&rsquo;s ability to split Terminal Windows just like a  tiling window manager does.
+Let&rsquo;s say you have 200 ssh sessions open each in one seperate window.
+Now search through the windows with screen:<br />ctrl-a <right> is it here? nope. ctrl-a <right> is it here? nope ctrl-a <right><br />you get it.</right></right></right><br />Search for a specific text in all terminal windows in tmux:<br />ctrl-b f myservernumber1 <enter> and boom!</enter><br />you got a list of all windows with that specific string in it.<br />I still not discovered all features but it&rsquo;s insane what it does to your ssh and console behavoir.<br /><br />Go and try it out.<br /><br />Ubuntu:<br />apt-get install tmux</p>
 ]]></content>
   </entry>
   
