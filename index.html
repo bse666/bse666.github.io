@@ -9,9 +9,8 @@
   <meta name="author" content="bse">
 
   
-  <meta name="description" content="fastest way: Open a Terminal and type in:
-cat /dev/sr0 &gt; $HOME/test.iso
-">
+  <meta name="description" content="If you are in the situation to deal with many zfs snapshots that are not needed
+anymore you can try this. !!! USE AT YOUR OWN RISK !!! Deletes all &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +78,66 @@ cat /dev/sr0 &gt; $HOME/test.iso
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/08/14/deleting-zfs-snapshots/">Deleting ZFS Snapshots</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-14T20:25:00+02:00" pubdate data-updated="true">Aug 14<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>If you are in the situation to deal with many zfs snapshots that are not needed
+anymore you can try this. !!! USE AT YOUR OWN RISK !!!</p>
+
+<figure class='code'><figcaption><span>Deletes all Snapshots found!!!</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c">#!/bin/bash</span>
+</span><span class='line'><span class="k">for </span>snapshot in <span class="sb">`</span>zfs list -H -t snapshot | cut -f 1<span class="sb">`</span> <span class="c">#add grep&#39;s here to limit</span>
+</span><span class='line'>                                                     <span class="c">#the amount of deletes</span>
+</span><span class='line'><span class="k">do</span>
+</span><span class='line'>zfs destroy <span class="nv">$snapshot</span>
+</span><span class='line'><span class="k">done</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Thanks to
+<a href="http://sysadminman.net/blog/2008/remove-all-zfs-snapshots-50">SysadminBlog</a> for the tip.</p>
+
+<figure class='code'><figcaption><span>List all snapshots</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>zfs list -H -t snapshot
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -405,6 +464,44 @@ settings by far for the most of the tools.</p>
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/03/07/jeopardy/">Jeopardy</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-07T00:00:00+01:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://github.com/chlange/jeopardy">jeopardy</a></p>
+
+<p>Ein Spiel für alle.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/02/21/silverlight-videos-on-linux/">Silverlight Videos on Linux</a></h1>
     
     
@@ -464,7 +561,48 @@ Happy Silverlighting&hellip;</p>
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/02/07/nethack-4/">Nethack 4</a></h1>
+      <h1 class="entry-title"><a href="/blog/2014/02/10/ipv6-private-adresses-in-linux/">IPv6 Private Adresses in Linux</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-10T00:00:00+01:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>To activate the private Adress room in Ubuntu you have to add the following
+line to your /etc/sysctl.conf:</p>
+
+<blockquote><p>net.ipv6.conf.all.use_tempaddr=2</p></blockquote>
+
+<p>!!!!!!!!!!!!! Funktioniert noch nicht so richtig!neinein! &hellip;</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/02/07/vim-the-most-text-editor-of-all/">VIM the Most Text Editor of All</a></h1>
     
     
       <p class="meta">
@@ -487,233 +625,11 @@ Happy Silverlighting&hellip;</p>
   </header>
 
 
-  <div class="entry-content"><p>There are many clones in the Nethack Community.
-Here is one that i learned to love the most.</p>
-
-<p><a href="http://tung.github.io/DynaHack/">dynahack</a> is the way to go.
-Download the latest source or git clone it.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git clone https://github.com/tung/DynaHack
-</span><span class='line'>cd DynaHack
-</span><span class='line'>sudo apt-get install gcc flex bison libncursesw5-dev libjansson-dev \
-</span><span class='line'>zlib1g-dev cmake cmake-curses-gui
-</span><span class='line'>mkdir build
-</span><span class='line'>cd build
-</span><span class='line'>cmake ..
-</span><span class='line'>ccmake .</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Set SHELLDIR and CMAKE_INSTALL_PREFIX to /home/username/dynahack/install.</p>
-
-<p>Set BINDIR, DATADIR and LIBDIR to /home/username/dynahack/install/dynahack-data.</p>
-
-<p>Press &lsquo;c&rsquo; to configure, then &lsquo;g&rsquo; to generate the build files and exit.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>make install</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And now have a blast shredding through the dungeons.
-&lt;SHIFT-S> saves the game.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/02/07/cannonball-%28the-outrun-engine%29/">Cannonball (the OutRun Engine)</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-02-07T00:00:00+01:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>How to install cannonball the outrun engine on your own PC for the ultimate
-Retro Experience on Ubuntu/Debian Derivates. With Windows the Process is defined on the <a href="https://github.com/djyt/cannonball.git">github page</a>.</p>
-
-<div>
-  <pre><code class='bash'>DIRRECTORY=~/git
-mkdir $DIRRECTORY
-git clone https://github.com/djyt/cannonball.git $DIRRECTORY/cannonball
-cd $DIRRECTORY/cannonball
-# could not get it to target debian
-cp cmake/debian.cmake cmake/default.cmake
-mkdir build
-cd build
-sudo apt-get install cmake libsdl1.2-dev libboost1.53-dev -yy
-cmake ../cmake
-make
-ln -s ../roms roms
-# now put your &quot;OutRun Rev.B romset in the roms dir.
-# and off you go by
-
-./cannonball</code></pre>
-</div>
-
-
-<p>Navigate to the options menu with the Arrow keys and &ldquo;1&rdquo; as &ldquo;Enter&rdquo;.
-Edit your keys to your behaviours.
-And Blast off to one of the coolest Gaming Machine Games
-of the last Century.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/02/06/new-blog-in-da-house/">New Blog in Da House</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-02-06T00:00:00+01:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Welcome here in my little Blogging experience.
-Since the last try&rsquo;s to blog more in the future failed i stumbled
-upon <a href="http://github.io">github-pages</a>.
-Here you got</p>
-
-<p>For a long time i <em>wanted to</em> get some cheat-sheets and tutorials up that i would
-not always have to look up in the web for little things like bash programming
-etc.
-Through the design of static pages and the ability to take your blog everywhere
-you go i couldn&rsquo;t resist to take a tour in the all new jekyll.
-And here we are.</p>
-
-<h3>Plugins i use:</h3>
-
-<ul>
-<li><a href="http://charliepark.org/tags-in-jekyll/">tags-in-jekyll</a></li>
-</ul>
-
-
-<h3>Why Jekyll when blogger.com is also not charging anything?</h3>
-
-<p>Jekyll could be less vurnable to attacks because of it&rsquo;s relatively static
-generated sites. This could be a huge plus in the next time.</p>
-
-<p>The second best plus for Jekyll is that you can take your blog and information
-with you and you are able to write and show all posts offline until a little
-internet is available for you.</p>
-
-<h4>Altdaten</h4>
-
-<p>Hier kann ich den Tip geben mit der Ubuntu Variante:</p>
-
-<ul>
-<li>Exportieren des Contents von Blogger</li>
-<li><a href="http://blogger.com/home">blogger</a> &ndash;> Blog auswählen.</li>
-<li>Einstellungen &ndash;> Sonstiges</li>
-<li>Blog-Extras &ndash;> Blog exportieren</li>
-<li>blog-(datum).xml speichern</li>
-<li>Ab auf die Console.</li>
-<li>Installation von <a href="http://nodejs.org">nodejs</a></li>
-</ul>
-
-
-<div>
-  <pre><code class='ruby'>sudo npm install -g blogger2jekyll
-# Konvertieren von altdaten in jekyll format
-blogger2jekyll blog-(datum).xml meineAltenBlogPosts</code></pre>
-</div>
-
-
-<p>Nun hat man in seinem Verzeichnis meineAltenBlogPosts alle Posts inklusive der Kommentare.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/09/22/tmux-terminalmultiplexer/">TMUX - TerminalMUltipleXer</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-<time datetime="2013-09-22T08:58:00+02:00" pubdate data-updated="true">Sep 22<span>nd</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>TMUX. Another great invention. Tmux is like screen but better.
-TerminalMUltipleXer it&rsquo;s called and that&rsquo;s what it does.
-With  this little program you are able to log into a Remote system and let  sessions open for later use. For Screen you have to extensively tweak it  to do your belongings and tmux just has it built in. My killer feature  for this app is it&rsquo;s ability to split Terminal Windows just like a  tiling window manager does.
-Let&rsquo;s say you have 200 ssh sessions open each in one seperate window.
-Now search through the windows with screen:<br />ctrl-a <right> is it here? nope. ctrl-a <right> is it here? nope ctrl-a <right><br />you get it.</right></right></right><br />Search for a specific text in all terminal windows in tmux:<br />ctrl-b f myservernumber1 <enter> and boom!</enter><br />you got a list of all windows with that specific string in it.<br />I still not discovered all features but it&rsquo;s insane what it does to your ssh and console behavoir.<br /><br />Go and try it out.<br /><br />Ubuntu:<br />apt-get install tmux</p>
-</div>
+  <div class="entry-content">
+	<ol>
+		<li>Things for the masses</li>
+	</ol></li>
+	<li>vim-cheat-sheet</div>
   
   
 
@@ -735,6 +651,10 @@ Now search through the windows with screen:<br />ctrl-a <right> is it here? nope
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/08/14/deleting-zfs-snapshots/">Deleting ZFS Snapshots</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/06/29/how-to-create-an-iso-in-linux./">How to Create an ISO in Linux.</a>
       </li>
     
@@ -748,10 +668,6 @@ Now search through the windows with screen:<br />ctrl-a <right> is it here? nope
     
       <li class="post">
         <a href="/blog/2014/04/28/how-to-sshd-on-android/">How to Enable Sshd on Android</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/03/07/terminal-fun/">Terminal Fun</a>
       </li>
     
   </ul>
