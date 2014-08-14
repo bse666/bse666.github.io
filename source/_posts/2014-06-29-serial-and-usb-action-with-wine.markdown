@@ -5,7 +5,7 @@ published: true
 date: 2014-06-29 13:52
 comments: true
 tags: wine, linux
-categories: wine,linux
+categories: wine linux
 ---
 First of all you have to add your user to the dialout group which is used in
 ubuntu for all serial or usb devices that can perform some kind of /dialouty/

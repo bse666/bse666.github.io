@@ -3,6 +3,7 @@ layout: post
 title: "Cannonball (the OutRun Engine)"
 published: true
 tags:       [linux, windows, games]
+categories: linux windows games
 ---
 
 How to install cannonball the outrun engine on your own PC for the ultimate

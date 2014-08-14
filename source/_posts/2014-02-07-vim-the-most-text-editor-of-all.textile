@@ -4,6 +4,7 @@ title: "VIM the most text editor of all"
 published: false
 created:  02/07/14 23:23:10
 tags: [vim, linux, windows]
+categories: linux vim
 ---
 
 ## Things for the masses
