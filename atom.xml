@@ -4,7 +4,7 @@
   <title><![CDATA[Home of BSE]]></title>
   <link href="http://bse666.github.io/atom.xml" rel="self"/>
   <link href="http://bse666.github.io/"/>
-  <updated>2014-08-15T01:06:18+02:00</updated>
+  <updated>2014-08-15T01:27:19+02:00</updated>
   <id>http://bse666.github.io/</id>
   <author>
     <name><![CDATA[bse]]></name>
@@ -50,10 +50,30 @@ anymore you can try this. !!! USE AT YOUR OWN RISK !!!</p>
     <link href="http://bse666.github.io/blog/2014/06/29/how-to-create-an-iso-in-linux./"/>
     <updated>2014-06-29T14:27:00+02:00</updated>
     <id>http://bse666.github.io/blog/2014/06/29/how-to-create-an-iso-in-linux.</id>
-    <content type="html"><![CDATA[<p>fastest way:</p>
+    <content type="html"><![CDATA[<h4>fastest way:</h4>
 
-<p>Open a Terminal and type in:
-<code>cat /dev/sr0 &gt; $HOME/test.iso</code></p>
+<p>Open a Terminal and type in:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>cat /dev/sr0 &gt; <span class="nv">$HOME</span>/test.iso
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Or with <em>dd</em></h4>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>isoinfo -d -i /dev/sr0 |grep -i -E <span class="s1">&#39;block size|volume size&#39;</span>
+</span><span class='line'>dd <span class="k">if</span><span class="o">=</span>/dev/sr0 <span class="nv">of</span><span class="o">=</span><span class="nv">$HOME</span>/test.iso <span class="nv">bs</span><span class="o">=</span>&lt;blocksize&gt; <span class="nv">count</span><span class="o">=</span>&lt;volumesize&gt;
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Test your Image against the CD/DVD</h4>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>cmp <span class="nv">$HOME</span>/test.iso /dev/sr0
+</span></code></pre></td></tr></table></div></figure>
+
 ]]></content>
   </entry>
   
