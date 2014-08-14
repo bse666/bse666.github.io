@@ -7,7 +7,18 @@ comments: true
 tags: 
 categories: 
 ---
-fastest way:
+#### fastest way:
 
 Open a Terminal and type in:
-``` cat /dev/sr0 > $HOME/test.iso ```
+``` bash
+cat /dev/sr0 > $HOME/test.iso
+```
+#### Or with _dd_
+``` bash
+isoinfo -d -i /dev/sr0 |grep -i -E 'block size|volume size'
+dd if=/dev/sr0 of=$HOME/test.iso bs=<blocksize> count=<volumesize>
+```
+#### Test your Image against the CD/DVD
+``` bash
+cmp $HOME/test.iso /dev/sr0
+```
