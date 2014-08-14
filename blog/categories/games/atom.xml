@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Games | Home of BSE]]></title>
+  <link href="http://bse666.github.io/blog/categories/games/atom.xml" rel="self"/>
+  <link href="http://bse666.github.io/"/>
+  <updated>2014-08-15T01:06:18+02:00</updated>
+  <id>http://bse666.github.io/</id>
+  <author>
+    <name><![CDATA[bse]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Nethack 4]]></title>
+    <link href="http://bse666.github.io/blog/2014/02/07/nethack-4/"/>
+    <updated>2014-02-07T00:00:00+01:00</updated>
+    <id>http://bse666.github.io/blog/2014/02/07/nethack-4</id>
+    <content type="html"><![CDATA[<p>There are many clones in the Nethack Community.
+Here is one that i learned to love the most.</p>
+
+<p><a href="http://tung.github.io/DynaHack/">dynahack</a> is the way to go.
+Download the latest source or git clone it.
+<code>
+git clone https://github.com/tung/DynaHack
+cd DynaHack
+sudo apt-get install gcc flex bison libncursesw5-dev libjansson-dev \
+zlib1g-dev cmake cmake-curses-gui
+mkdir build
+cd build
+cmake ..
+ccmake .
+</code>
+Set SHELLDIR and CMAKE_INSTALL_PREFIX to /home/username/dynahack/install.</p>
+
+<p>Set BINDIR, DATADIR and LIBDIR to /home/username/dynahack/install/dynahack-data.</p>
+
+<p>Press &lsquo;c&rsquo; to configure, then &lsquo;g&rsquo; to generate the build files and exit.
+<code>
+make install
+</code></p>
+
+<p>And now have a blast shredding through the dungeons.
+&lt;SHIFT-S> saves the game.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cannonball (the OutRun Engine)]]></title>
+    <link href="http://bse666.github.io/blog/2014/02/07/cannonball-%28the-outrun-engine%29/"/>
+    <updated>2014-02-07T00:00:00+01:00</updated>
+    <id>http://bse666.github.io/blog/2014/02/07/cannonball-(the-outrun-engine)</id>
+    <content type="html"><![CDATA[<p>How to install cannonball the outrun engine on your own PC for the ultimate
+Retro Experience on Ubuntu/Debian Derivates. With Windows the Process is defined on the <a href="https://github.com/djyt/cannonball.git">github page</a>.</p>
+
+<p><div>
+  <pre><code class='bash'>DIRRECTORY=~/git
+mkdir $DIRRECTORY
+git clone &lt;a href=&quot;https://github.com/djyt/cannonball.git&quot;&gt;https://github.com/djyt/cannonball.git&lt;/a&gt; $DIRRECTORY/cannonball
+cd $DIRRECTORY/cannonball&lt;/p&gt;
+
+&lt;h1&gt;could not get it to target debian&lt;/h1&gt;
+
+&lt;p&gt;cp cmake/debian.cmake cmake/default.cmake
+mkdir build
+cd build
+sudo apt-get install cmake libsdl1.2-dev libboost1.53-dev -yy
+cmake ../cmake
+make
+ln -s ../roms roms&lt;/p&gt;
+
+&lt;h1&gt;now put your &amp;ldquo;OutRun Rev.B romset in the roms dir.&lt;/h1&gt;
+
+&lt;h1&gt;and off you go by&lt;/h1&gt;
+
+&lt;p&gt;./cannonball&lt;/p&gt;
+
+&lt;p&gt;</code></pre>
+</div>
+</p>
+
+<p>Navigate to the options menu with the Arrow keys and &ldquo;1&rdquo; as &ldquo;Enter&rdquo;.
+Edit your keys to your behaviours.
+And Blast off to one of the coolest Gaming Machine Games
+of the last Century.</p>
+]]></content>
+  </entry>
+  
+</feed>

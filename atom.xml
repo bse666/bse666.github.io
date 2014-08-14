@@ -4,7 +4,7 @@
   <title><![CDATA[Home of BSE]]></title>
   <link href="http://bse666.github.io/atom.xml" rel="self"/>
   <link href="http://bse666.github.io/"/>
-  <updated>2014-08-15T01:02:11+02:00</updated>
+  <updated>2014-08-15T01:06:18+02:00</updated>
   <id>http://bse666.github.io/</id>
   <author>
     <name><![CDATA[bse]]></name>
@@ -364,6 +364,17 @@ settings by far for the most of the tools.</p>
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[Jeopardy]]></title>
+    <link href="http://bse666.github.io/blog/2014/03/07/jeopardy/"/>
+    <updated>2014-03-07T00:00:00+01:00</updated>
+    <id>http://bse666.github.io/blog/2014/03/07/jeopardy</id>
+    <content type="html"><![CDATA[<p><a href="https://github.com/chlange/jeopardy">jeopardy</a></p>
+
+<p>Ein Spiel für alle.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Silverlight Videos on Linux]]></title>
     <link href="http://bse666.github.io/blog/2014/02/21/silverlight-videos-on-linux/"/>
     <updated>2014-02-21T00:00:00+01:00</updated>
@@ -393,6 +404,32 @@ browser and a dedicated one.</p>
 <p>go out there and
 Happy Silverlighting&hellip;</p>
 ]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[IPv6 Private Adresses in Linux]]></title>
+    <link href="http://bse666.github.io/blog/2014/02/10/ipv6-private-adresses-in-linux/"/>
+    <updated>2014-02-10T00:00:00+01:00</updated>
+    <id>http://bse666.github.io/blog/2014/02/10/ipv6-private-adresses-in-linux</id>
+    <content type="html"><![CDATA[<p>To activate the private Adress room in Ubuntu you have to add the following
+line to your /etc/sysctl.conf:</p>
+
+<blockquote><p>net.ipv6.conf.all.use_tempaddr=2</p></blockquote>
+
+<p>!!!!!!!!!!!!! Funktioniert noch nicht so richtig!neinein! &hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[VIM the Most Text Editor of All]]></title>
+    <link href="http://bse666.github.io/blog/2014/02/07/vim-the-most-text-editor-of-all/"/>
+    <updated>2014-02-07T00:00:00+01:00</updated>
+    <id>http://bse666.github.io/blog/2014/02/07/vim-the-most-text-editor-of-all</id>
+    <content type="html"><![CDATA[
+	<ol>
+		<li>Things for the masses</li>
+	</ol></li>
+	<li>vim-cheat-sheet]]></content>
   </entry>
   
   <entry>

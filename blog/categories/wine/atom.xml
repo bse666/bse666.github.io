@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Wine,linux | Home of BSE]]></title>
-  <link href="http://bse666.github.io/blog/categories/wine-linux/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Wine | Home of BSE]]></title>
+  <link href="http://bse666.github.io/blog/categories/wine/atom.xml" rel="self"/>
   <link href="http://bse666.github.io/"/>
-  <updated>2014-08-15T01:02:11+02:00</updated>
+  <updated>2014-08-15T01:06:18+02:00</updated>
   <id>http://bse666.github.io/</id>
   <author>
     <name><![CDATA[bse]]></name>
