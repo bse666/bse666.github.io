@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | Home of BSE]]></title>
   <link href="http://bse666.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://bse666.github.io/"/>
-  <updated>2014-08-18T10:25:03+02:00</updated>
+  <updated>2014-08-18T10:25:41+02:00</updated>
   <id>http://bse666.github.io/</id>
   <author>
     <name><![CDATA[bse]]></name>
@@ -64,28 +64,6 @@ that in my case resides in $HOME/.PlayOnLinux/wineprefix/nTrip .</p>
 </span><span class='line'>ln -s /dev/ttyUSB0 dosdevices/com1  # /dev/ttyS0 for the first serial port</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Have Fun.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Android and Ubuntu]]></title>
-    <link href="http://bse666.github.io/blog/2014/06/12/android-and-ubuntu/"/>
-    <updated>2014-06-12T08:24:00+02:00</updated>
-    <id>http://bse666.github.io/blog/2014/06/12/android-and-ubuntu</id>
-    <content type="html"><![CDATA[<p>The easiest way to flash your Smartphone:</p>
-
-<p>First install the android tools:</p>
-
-<p>sudo apt-get install android-tools-adb android-tools-fastboot</p>
-
-<p>reboot your phone into recovery</p>
-
-<p>sideload:</p>
-
-<p>adb sideload cm-11-*.zip
-adb sideload gapps-*.zip</p>
-
-<p>have fun! :)</p>
 ]]></content>
   </entry>
   
@@ -276,6 +254,33 @@ settings by far for the most of the tools.</p>
 <h2>a little configuration</h2>
 
 <p><em>DOTFILES REPO FOR THE MASSES</em></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Silverlight Videos on Linux]]></title>
+    <link href="http://bse666.github.io/blog/2014/02/21/silverlight-videos-on-linux/"/>
+    <updated>2014-02-21T00:00:00+01:00</updated>
+    <id>http://bse666.github.io/blog/2014/02/21/silverlight-videos-on-linux</id>
+    <content type="html"><![CDATA[<h3>Silverlight and linux are not friends.</h3>
+
+<p>This is the Tutorial from which i could watch movies for silverlight successfully on my Ubuntu Machine.
+<a href="http://fds-team.de/cms/pipelight-installation.html">Pipelight Installation</a></p>
+
+<p>So for Ubuntu you have to do some little things &hellip;
+For my personal recommends i added chromium to split the usage of a normal
+browser and a dedicated one.</p>
+
+<p><code>bash
+ sudo add-apt-repository ppa:pipelight/stable
+ sudo apt-get update
+ sudo apt-get install --install-recommends pipelight-multi
+ sudo pipelight-plugin --enable silverlight
+ sudo apt-get install chromium-browser
+</code></p>
+
+<p>go out there and
+Happy Silverlighting&hellip;</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Android | Home of BSE]]></title>
   <link href="http://bse666.github.io/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://bse666.github.io/"/>
-  <updated>2014-08-18T10:25:03+02:00</updated>
+  <updated>2014-08-18T10:25:41+02:00</updated>
   <id>http://bse666.github.io/</id>
   <author>
     <name><![CDATA[bse]]></name>
@@ -12,28 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Android and Ubuntu]]></title>
-    <link href="http://bse666.github.io/blog/2014/06/12/android-and-ubuntu/"/>
-    <updated>2014-06-12T08:24:00+02:00</updated>
-    <id>http://bse666.github.io/blog/2014/06/12/android-and-ubuntu</id>
-    <content type="html"><![CDATA[<p>The easiest way to flash your Smartphone:</p>
-
-<p>First install the android tools:</p>
-
-<p>sudo apt-get install android-tools-adb android-tools-fastboot</p>
-
-<p>reboot your phone into recovery</p>
-
-<p>sideload:</p>
-
-<p>adb sideload cm-11-*.zip
-adb sideload gapps-*.zip</p>
-
-<p>have fun! :)</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Enable Sshd on Android]]></title>
