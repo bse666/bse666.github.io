@@ -9,7 +9,19 @@
   <meta name="author" content="bse">
 
   
-  <meta name="description" content="Here are some of my favourite bindings in vim. The first thing to do in .vimrc: &quot; Unmap the Arrow Keys \{\{\{ no &lt;down&gt; &lt;Nop&gt; no &lt &hellip;">
+  <meta name="description" content="Here are some of my favourite bindings in vim. The first thing to do in .vimrc: 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13 &quot; Unmap the Arrow Keys \{\{\{ no & &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -107,21 +119,33 @@
 
 <p>The first thing to do in .vimrc:</p>
 
-<div>
-  <pre><code class='ruby'>&quot; Unmap the Arrow Keys \{\{\{
- no &lt;down&gt; &lt;Nop&gt;
- no &lt;left&gt; &lt;Nop&gt;
- no &lt;right&gt; &lt;Nop&gt;
- no &lt;up&gt; &lt;Nop&gt;
- ino &lt;down&gt; &lt;Nop&gt;
- ino &lt;left&gt; &lt;Nop&gt;
- ino &lt;right&gt; &lt;Nop&gt;
- ino &lt;up&gt; &lt;Nop&gt;
- vno &lt;down&gt; &lt;Nop&gt;
- vno &lt;left&gt; &lt;Nop&gt;
- vno &lt;right&gt; &lt;Nop&gt;
- vno &lt;up&gt; &lt;Nop&gt;</code></pre>
-</div>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'> <span class="err">&quot;</span> Unmap the Arrow Keys <span class="se">\{\{\{</span>
+</span><span class='line'> no &lt;down&gt; &lt;Nop&gt;
+</span><span class='line'> no &lt;left&gt; &lt;Nop&gt;
+</span><span class='line'> no &lt;right&gt; &lt;Nop&gt;
+</span><span class='line'> no &lt;up&gt; &lt;Nop&gt;
+</span><span class='line'> ino &lt;down&gt; &lt;Nop&gt;
+</span><span class='line'> ino &lt;left&gt; &lt;Nop&gt;
+</span><span class='line'> ino &lt;right&gt; &lt;Nop&gt;
+</span><span class='line'> ino &lt;up&gt; &lt;Nop&gt;
+</span><span class='line'> vno &lt;down&gt; &lt;Nop&gt;
+</span><span class='line'> vno &lt;left&gt; &lt;Nop&gt;
+</span><span class='line'> vno &lt;right&gt; &lt;Nop&gt;
+</span><span class='line'> vno &lt;up&gt; &lt;Nop&gt;
+</span></code></pre></td></tr></table></div></figure>
 
 
 <p>The following are my private favourites for now and evolving.</p>
@@ -129,50 +153,87 @@
 <!-- more -->
 
 
-<div>
-  <pre><code class='ruby'>&quot; Jekyll Blog Bindings  \{\{\{
- let g:jekyll_path = &quot;$HOME/git/blog&quot;
- &quot; Jekyll Bundle mappings
- map &lt;Leader&gt;jn  :JekyllPost&lt;CR&gt;
- map &lt;Leader&gt;jl  :JekyllList&lt;CR&gt;
- map &lt;Leader&gt;jc  :JekyllCommit&lt;CR&gt;
- map &lt;Leader&gt;jp  :JekyllPublish&lt;CR&gt;
-
- &quot; Quickly edit/reload the vimrc file
- nmap &lt;silent&gt; &lt;leader&gt;ev :e $MYVIMRC&lt;CR&gt;
- nmap &lt;silent&gt; &lt;leader&gt;sv :so $MYVIMRC&lt;CR&gt;
-
- &quot; Paste Mode for pasting more Text at once (use in insert mode)
- set pastetoggle=&lt;F2&gt;
-
- &quot; Use sane regexes.
- nnoremap / /\v
- vnoremap / /\v
-
- &quot; Easier to type
- noremap H ^
- noremap L $
- vnoremap L g_
-
- &quot; gi already moves to &quot;last place you exited insert mode&quot;, so we'll map gI to
- &quot; something similar: move to last change
- nnoremap gI `.
-
- &quot; Move the cursor one displaying line on the screen not in the text.
- &quot; useful with wrapped lines
- noremap j gj
- noremap k gk
- noremap gj j
- noremap gk k
-
- &quot; Easy buffer navigation in split view's
- noremap &lt;C-h&gt; &lt;C-w&gt;h
- noremap &lt;C-j&gt; &lt;C-w&gt;j
- noremap &lt;C-k&gt; &lt;C-w&gt;k
- noremap &lt;C-l&gt; &lt;C-w&gt;l</code></pre>
-</div>
-
-
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'> <span class="s2">&quot; Jekyll Blog Bindings  \{\{\{</span>
+</span><span class='line'><span class="s2"> let g:jekyll_path = &quot;</span><span class="nv">$HOME</span>/git/blog<span class="s2">&quot;</span>
+</span><span class='line'><span class="s2"> &quot;</span> Jekyll Bundle mappings
+</span><span class='line'> map &lt;Leader&gt;jn  :JekyllPost&lt;CR&gt;
+</span><span class='line'> map &lt;Leader&gt;jl  :JekyllList&lt;CR&gt;
+</span><span class='line'> map &lt;Leader&gt;jc  :JekyllCommit&lt;CR&gt;
+</span><span class='line'> map &lt;Leader&gt;jp  :JekyllPublish&lt;CR&gt;
+</span><span class='line'>
+</span><span class='line'> <span class="s2">&quot; Quickly edit/reload the vimrc file</span>
+</span><span class='line'><span class="s2"> nmap &lt;silent&gt; &lt;leader&gt;ev :e $MYVIMRC&lt;CR&gt;</span>
+</span><span class='line'><span class="s2"> nmap &lt;silent&gt; &lt;leader&gt;sv :so $MYVIMRC&lt;CR&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2"> &quot;</span> Paste Mode <span class="k">for </span>pasting more Text at once <span class="o">(</span>use in insert mode<span class="o">)</span>
+</span><span class='line'> <span class="nb">set </span><span class="nv">pastetoggle</span><span class="o">=</span>&lt;F2&gt;
+</span><span class='line'>
+</span><span class='line'> <span class="s2">&quot; Use sane regexes.</span>
+</span><span class='line'><span class="s2"> nnoremap / /\v</span>
+</span><span class='line'><span class="s2"> vnoremap / /\v</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2"> &quot;</span> Easier to <span class="nb">type</span>
+</span><span class='line'><span class="nb"> </span>noremap H ^
+</span><span class='line'> noremap L <span class="err">$</span>
+</span><span class='line'> vnoremap L g_
+</span><span class='line'>
+</span><span class='line'> <span class="s2">&quot; gi already moves to &quot;</span>last place you exited insert mode<span class="s2">&quot;, so we&#39;ll map gI to</span>
+</span><span class='line'><span class="s2"> &quot;</span> something similar: move to last change
+</span><span class='line'> nnoremap gI <span class="sb">`</span>.
+</span><span class='line'>
+</span><span class='line'> <span class="s2">&quot; Move the cursor one displaying line on the screen not in the text.</span>
+</span><span class='line'><span class="s2"> &quot;</span> useful with wrapped lines
+</span><span class='line'> noremap j gj
+</span><span class='line'> noremap k gk
+</span><span class='line'> noremap gj j
+</span><span class='line'> noremap gk k
+</span><span class='line'>
+</span><span class='line'> <span class="err">&quot;</span> Easy buffer navigation in split view<span class="err">&#39;</span>s
+</span><span class='line'> noremap &lt;C-h&gt; &lt;C-w&gt;h
+</span><span class='line'> noremap &lt;C-j&gt; &lt;C-w&gt;j
+</span><span class='line'> noremap &lt;C-k&gt; &lt;C-w&gt;k
+</span><span class='line'> noremap &lt;C-l&gt; &lt;C-w&gt;l
+</span></code></pre></td></tr></table></div></figure>
 
 </div>
 
@@ -218,7 +279,7 @@
         <a class="basic-alignment left" href="/blog/2014/04/28/how-to-sshd-on-android/" title="Previous Post: How to enable sshd on Android">&laquo; How to enable sshd on Android</a>
       
       
-        <a class="basic-alignment right" href="/blog/2014/06/29/serial-and-usb-action-with-wine/" title="Next Post: Serial and USB Action with wine">Serial and USB Action with wine &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2014/05/27/vim-things/" title="Next Post: Vim Things">Vim Things &raquo;</a>
       
     </p>
   </footer>
@@ -245,11 +306,11 @@
       </li>
     
       <li class="post">
-        <a href="/blog/2014/05/18/my-best-vim-config-dip-s/">My Best Vim Config Dip's</a>
+        <a href="/blog/2014/06/12/android-and-ubuntu/">Android and Ubuntu</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2014/04/28/how-to-sshd-on-android/">How to Enable Sshd on Android</a>
+        <a href="/blog/2014/05/27/vim-things/">Vim Things</a>
       </li>
     
   </ul>

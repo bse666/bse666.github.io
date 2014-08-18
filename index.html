@@ -256,6 +256,95 @@ that in my case resides in $HOME/.PlayOnLinux/wineprefix/nTrip .</p>
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/06/12/android-and-ubuntu/">Android and Ubuntu</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-12T08:24:00+02:00" pubdate data-updated="true">Jun 12<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The easiest way to flash your Smartphone:</p>
+
+<p>First install the android tools:</p>
+
+<p>sudo apt-get install android-tools-adb android-tools-fastboot</p>
+
+<p>reboot your phone into recovery</p>
+
+<p>sideload:</p>
+
+<p>adb sideload cm-11-*.zip
+adb sideload gapps-*.zip</p>
+
+<p>have fun! :)</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/05/27/vim-things/">Vim Things</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-27T16:10:00+02:00" pubdate data-updated="true">May 27<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><ul>
+<li>MRU</li>
+<li>Snipmates-snippets</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/05/18/my-best-vim-config-dip-s/">My Best Vim Config Dip&#8217;s</a></h1>
     
     
@@ -283,21 +372,33 @@ that in my case resides in $HOME/.PlayOnLinux/wineprefix/nTrip .</p>
 
 <p>The first thing to do in .vimrc:</p>
 
-<div>
-  <pre><code class='ruby'>&quot; Unmap the Arrow Keys \{\{\{
- no &lt;down&gt; &lt;Nop&gt;
- no &lt;left&gt; &lt;Nop&gt;
- no &lt;right&gt; &lt;Nop&gt;
- no &lt;up&gt; &lt;Nop&gt;
- ino &lt;down&gt; &lt;Nop&gt;
- ino &lt;left&gt; &lt;Nop&gt;
- ino &lt;right&gt; &lt;Nop&gt;
- ino &lt;up&gt; &lt;Nop&gt;
- vno &lt;down&gt; &lt;Nop&gt;
- vno &lt;left&gt; &lt;Nop&gt;
- vno &lt;right&gt; &lt;Nop&gt;
- vno &lt;up&gt; &lt;Nop&gt;</code></pre>
-</div>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'> <span class="err">&quot;</span> Unmap the Arrow Keys <span class="se">\{\{\{</span>
+</span><span class='line'> no &lt;down&gt; &lt;Nop&gt;
+</span><span class='line'> no &lt;left&gt; &lt;Nop&gt;
+</span><span class='line'> no &lt;right&gt; &lt;Nop&gt;
+</span><span class='line'> no &lt;up&gt; &lt;Nop&gt;
+</span><span class='line'> ino &lt;down&gt; &lt;Nop&gt;
+</span><span class='line'> ino &lt;left&gt; &lt;Nop&gt;
+</span><span class='line'> ino &lt;right&gt; &lt;Nop&gt;
+</span><span class='line'> ino &lt;up&gt; &lt;Nop&gt;
+</span><span class='line'> vno &lt;down&gt; &lt;Nop&gt;
+</span><span class='line'> vno &lt;left&gt; &lt;Nop&gt;
+</span><span class='line'> vno &lt;right&gt; &lt;Nop&gt;
+</span><span class='line'> vno &lt;up&gt; &lt;Nop&gt;
+</span></code></pre></td></tr></table></div></figure>
 
 
 <p>The following are my private favourites for now and evolving.</p>
@@ -575,86 +676,6 @@ Happy Silverlighting&hellip;</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/02/10/ipv6-private-adresses-in-linux/">IPv6 Private Adresses in Linux</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-02-10T00:00:00+01:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>To activate the private Adress room in Ubuntu you have to add the following
-line to your /etc/sysctl.conf:</p>
-
-<blockquote><p>net.ipv6.conf.all.use_tempaddr=2</p></blockquote>
-
-<p>!!!!!!!!!!!!! Funktioniert noch nicht so richtig!neinein! &hellip;</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/02/07/vim-the-most-text-editor-of-all/">VIM the Most Text Editor of All</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-02-07T00:00:00+01:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">
-	<ol>
-		<li>Things for the masses</li>
-	</ol></li>
-	<li>vim-cheat-sheet</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -682,11 +703,11 @@ line to your /etc/sysctl.conf:</p>
       </li>
     
       <li class="post">
-        <a href="/blog/2014/05/18/my-best-vim-config-dip-s/">My Best Vim Config Dip&#8217;s</a>
+        <a href="/blog/2014/06/12/android-and-ubuntu/">Android and Ubuntu</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2014/04/28/how-to-sshd-on-android/">How to Enable Sshd on Android</a>
+        <a href="/blog/2014/05/27/vim-things/">Vim Things</a>
       </li>
     
   </ul>
