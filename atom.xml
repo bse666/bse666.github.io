@@ -4,7 +4,7 @@
   <title><![CDATA[Home of BSE]]></title>
   <link href="http://bse666.github.io/atom.xml" rel="self"/>
   <link href="http://bse666.github.io/"/>
-  <updated>2014-08-18T10:25:41+02:00</updated>
+  <updated>2014-08-18T11:19:49+02:00</updated>
   <id>http://bse666.github.io/</id>
   <author>
     <name><![CDATA[bse]]></name>
@@ -101,6 +101,34 @@ that in my case resides in $HOME/.PlayOnLinux/wineprefix/nTrip .</p>
 
 
 <p>Have Fun.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Android and Ubuntu]]></title>
+    <link href="http://bse666.github.io/blog/2014/06/12/android-and-ubuntu/"/>
+    <updated>2014-06-12T08:24:00+02:00</updated>
+    <id>http://bse666.github.io/blog/2014/06/12/android-and-ubuntu</id>
+    <content type="html"><![CDATA[<h4>The easiest way to flash your Smartphone:</h4>
+
+<h5>First install the android tools</h5>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo apt-get install android-tools-adb android-tools-fastboot
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h5>reboot your phone into recovery</h5>
+
+<p>For my nexus 4 it is holding down the powerbutton and the volume down key since
+the recovery appears.</p>
+
+<h5>plug the phone into your computer and sideload your android image</h5>
+
+<p>adb sideload cm-11-*.zip
+adb sideload gapps-*.zip</p>
+
+<h5>have fun! :)</h5>
 ]]></content>
   </entry>
   

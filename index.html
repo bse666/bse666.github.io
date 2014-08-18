@@ -256,6 +256,61 @@ that in my case resides in $HOME/.PlayOnLinux/wineprefix/nTrip .</p>
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/06/12/android-and-ubuntu/">Android and Ubuntu</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-12T08:24:00+02:00" pubdate data-updated="true">Jun 12<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>The easiest way to flash your Smartphone:</h4>
+
+<h5>First install the android tools</h5>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo apt-get install android-tools-adb android-tools-fastboot
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h5>reboot your phone into recovery</h5>
+
+<p>For my nexus 4 it is holding down the powerbutton and the volume down key since
+the recovery appears.</p>
+
+<h5>plug the phone into your computer and sideload your android image</h5>
+
+<p>adb sideload cm-11-*.zip
+adb sideload gapps-*.zip</p>
+
+<h5>have fun! :)</h5>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/05/18/my-best-vim-config-dip-s/">My Best Vim Config Dip&#8217;s</a></h1>
     
     
@@ -682,92 +737,6 @@ of the last Century.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/02/06/new-blog-in-da-house/">New Blog in Da House</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-02-06T00:00:00+01:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Welcome here in my little Blogging experience.
-Since the last try&rsquo;s to blog more in the future failed i stumbled
-upon <a href="http://github.io">github-pages</a>.
-Here you got</p>
-
-<p>For a long time i <em>wanted to</em> get some cheat-sheets and tutorials up that i would
-not always have to look up in the web for little things like bash programming
-etc.
-Through the design of static pages and the ability to take your blog everywhere
-you go i couldn&rsquo;t resist to take a tour in the all new jekyll.
-And here we are.</p>
-
-<h3>Plugins i use:</h3>
-
-<ul>
-<li><a href="http://charliepark.org/tags-in-jekyll/">tags-in-jekyll</a></li>
-</ul>
-
-
-<h3>Why Jekyll when blogger.com is also not charging anything?</h3>
-
-<p>Jekyll could be less vurnable to attacks because of it&rsquo;s relatively static
-generated sites. This could be a huge plus in the next time.</p>
-
-<p>The second best plus for Jekyll is that you can take your blog and information
-with you and you are able to write and show all posts offline until a little
-internet is available for you.</p>
-
-<h4>Altdaten</h4>
-
-<p>Hier kann ich den Tip geben mit der Ubuntu Variante:</p>
-
-<ul>
-<li>Exportieren des Contents von Blogger</li>
-<li><a href="http://blogger.com/home">blogger</a> &ndash;> Blog auswählen.</li>
-<li>Einstellungen &ndash;> Sonstiges</li>
-<li>Blog-Extras &ndash;> Blog exportieren</li>
-<li>blog-(datum).xml speichern</li>
-<li>Ab auf die Console.</li>
-<li>Installation von <a href="http://nodejs.org">nodejs</a></li>
-</ul>
-
-
-<div>
-  <pre><code class='ruby'>sudo npm install -g blogger2jekyll
-# Konvertieren von altdaten in jekyll format
-blogger2jekyll blog-(datum).xml meineAltenBlogPosts</code></pre>
-</div>
-
-
-<p>Nun hat man in seinem Verzeichnis meineAltenBlogPosts alle Posts inklusive der Kommentare.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -795,11 +764,11 @@ blogger2jekyll blog-(datum).xml meineAltenBlogPosts</code></pre>
       </li>
     
       <li class="post">
-        <a href="/blog/2014/05/18/my-best-vim-config-dip-s/">My Best Vim Config Dip&#8217;s</a>
+        <a href="/blog/2014/06/12/android-and-ubuntu/">Android and Ubuntu</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2014/04/28/how-to-sshd-on-android/">How to Enable Sshd on Android</a>
+        <a href="/blog/2014/05/18/my-best-vim-config-dip-s/">My Best Vim Config Dip&#8217;s</a>
       </li>
     
   </ul>
