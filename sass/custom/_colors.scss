@@ -14,6 +14,11 @@
 //$footer-bg-front: image-url('noise.png');
 //$footer-bg-back: linear-gradient(lighten($footer-bg, 8), $footer-bg, darken($footer-bg, 11));
 
+// Main Link Colors
+$link-color: darken(#7ab662, 9);
+//$link-color-hover: adjust-color($link-color, $lightness: 10, $saturation: 25);
+//$link-color-visited: adjust-color($link-color, $hue: 80, $lightness: -4);
+//$link-color-active: adjust-color($link-color-hover, $lightness: -15);
 
 /* To use the light Solarized highlighting theme uncomment the following line */
 $solarized: light;
