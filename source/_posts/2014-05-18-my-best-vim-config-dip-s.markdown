@@ -8,7 +8,7 @@ Here are some of my favourite bindings in vim.
 
 The first thing to do in .vimrc:
 
-{% highlight ruby %}
+``` bash
  " Unmap the Arrow Keys \{\{\{
  no <down> <Nop>
  no <left> <Nop>
@@ -22,11 +22,11 @@ The first thing to do in .vimrc:
  vno <left> <Nop>
  vno <right> <Nop>
  vno <up> <Nop>
-{% endhighlight %}
+```
 The following are my private favourites for now and evolving.
 
 <!-- more -->
-{% highlight ruby %}
+``` bash
  " Jekyll Blog Bindings  \{\{\{
  let g:jekyll_path = "$HOME/git/blog"
  " Jekyll Bundle mappings
@@ -67,4 +67,4 @@ The following are my private favourites for now and evolving.
  noremap <C-j> <C-w>j
  noremap <C-k> <C-w>k
  noremap <C-l> <C-w>l
-{% endhighlight %}
+```
