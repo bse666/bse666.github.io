@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Windows | Home of BSE]]></title>
   <link href="http://bse666.github.io/blog/categories/windows/atom.xml" rel="self"/>
   <link href="http://bse666.github.io/"/>
-  <updated>2014-08-25T11:52:55+02:00</updated>
+  <updated>2014-08-25T11:55:42+02:00</updated>
   <id>http://bse666.github.io/</id>
   <author>
     <name><![CDATA[bse]]></name>
@@ -55,31 +55,29 @@ make install
     <content type="html"><![CDATA[<p>How to install cannonball the outrun engine on your own PC for the ultimate
 Retro Experience on Ubuntu/Debian Derivates. With Windows the Process is defined on the <a href="https://github.com/djyt/cannonball.git">github page</a>.</p>
 
-<p><div>
-  <pre><code class='bash'>DIRRECTORY=~/git
+<p>{% highlight bash %}
+DIRRECTORY=~/git
 mkdir $DIRRECTORY
-git clone &lt;a href=&quot;https://github.com/djyt/cannonball.git&quot;&gt;https://github.com/djyt/cannonball.git&lt;/a&gt; $DIRRECTORY/cannonball
-cd $DIRRECTORY/cannonball&lt;/p&gt;
+git clone <a href="https://github.com/djyt/cannonball.git">https://github.com/djyt/cannonball.git</a> $DIRRECTORY/cannonball
+cd $DIRRECTORY/cannonball</p>
 
-&lt;h1&gt;could not get it to target debian&lt;/h1&gt;
+<h1>could not get it to target debian</h1>
 
-&lt;p&gt;cp cmake/debian.cmake cmake/default.cmake
+<p>cp cmake/debian.cmake cmake/default.cmake
 mkdir build
 cd build
 sudo apt-get install cmake libsdl1.2-dev libboost1.53-dev -yy
 cmake ../cmake
 make
-ln -s ../roms roms&lt;/p&gt;
+ln -s ../roms roms</p>
 
-&lt;h1&gt;now put your &amp;ldquo;OutRun Rev.B romset in the roms dir.&lt;/h1&gt;
+<h1>now put your &ldquo;OutRun Rev.B romset in the roms dir.</h1>
 
-&lt;h1&gt;and off you go by&lt;/h1&gt;
+<h1>and off you go by</h1>
 
-&lt;p&gt;./cannonball&lt;/p&gt;
+<p>./cannonball</p>
 
-&lt;p&gt;</code></pre>
-</div>
-</p>
+<p>{% endhighlight %}</p>
 
 <p>Navigate to the options menu with the Arrow keys and &ldquo;1&rdquo; as &ldquo;Enter&rdquo;.
 Edit your keys to your behaviours.

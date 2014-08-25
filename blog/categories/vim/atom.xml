@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Vim | Home of BSE]]></title>
+  <link href="http://bse666.github.io/blog/categories/vim/atom.xml" rel="self"/>
+  <link href="http://bse666.github.io/"/>
+  <updated>2014-08-25T11:55:36+02:00</updated>
+  <id>http://bse666.github.io/</id>
+  <author>
+    <name><![CDATA[bse]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[VIM the Most Text Editor of All]]></title>
+    <link href="http://bse666.github.io/blog/2014/02/07/vim-the-most-text-editor-of-all/"/>
+    <updated>2014-02-07T00:00:00+01:00</updated>
+    <id>http://bse666.github.io/blog/2014/02/07/vim-the-most-text-editor-of-all</id>
+    <content type="html"><![CDATA[<h2>Things for the masses</h2>
+
+<ul>
+<li>vim-cheat-sheet</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

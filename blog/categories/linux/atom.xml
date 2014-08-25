@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Linux, | Home of BSE]]></title>
+  <title><![CDATA[Category: Linux | Home of BSE]]></title>
   <link href="http://bse666.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://bse666.github.io/"/>
-  <updated>2014-08-25T11:52:55+02:00</updated>
+  <updated>2014-08-25T11:55:42+02:00</updated>
   <id>http://bse666.github.io/</id>
   <author>
     <name><![CDATA[bse]]></name>
@@ -14,19 +14,272 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Winy Wine]]></title>
-    <link href="http://bse666.github.io/blog/2014/08/18/winy-wine/"/>
-    <updated>2014-08-18T13:50:00+02:00</updated>
-    <id>http://bse666.github.io/blog/2014/08/18/winy-wine</id>
-    <content type="html"><![CDATA[<p>Getting things done with wine on linux is cool, but you have to seperate working
-directories if you want to be able to cleanly remove or install another
-application side by side. Here i have a few tips for you to make yout first
-steps into that.</p>
+    <title type="html"><![CDATA[Deleting ZFS Snapshots]]></title>
+    <link href="http://bse666.github.io/blog/2014/08/14/deleting-zfs-snapshots/"/>
+    <updated>2014-08-14T20:25:00+02:00</updated>
+    <id>http://bse666.github.io/blog/2014/08/14/deleting-zfs-snapshots</id>
+    <content type="html"><![CDATA[<p>If you are in the situation to deal with many zfs snapshots that are not needed
+anymore you can try this. !!! USE AT YOUR OWN RISK !!!</p>
+
+<p>``` bash Deletes all Snapshots found!!! (thanks to SysadminBlog) <a href="http://sysadminman.net/blog/2008/remove-all-zfs-snapshots-50">http://sysadminman.net/blog/2008/remove-all-zfs-snapshots-50</a></p>
+
+<h1>!/bin/bash</h1>
+
+<p>for snapshot in <code>zfs list -H -t snapshot | cut -f 1</code> #add grep&rsquo;s here to limit</p>
+
+<pre><code>                                                 #the amount of deletes
+</code></pre>
+
+<p>do
+zfs destroy $snapshot
+done
+```</p>
+
+<p><code>bash List all snapshots
+zfs list -H -t snapshot
+</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Serial and USB Action With Wine]]></title>
+    <link href="http://bse666.github.io/blog/2014/06/29/serial-and-usb-action-with-wine/"/>
+    <updated>2014-06-29T13:52:00+02:00</updated>
+    <id>http://bse666.github.io/blog/2014/06/29/serial-and-usb-action-with-wine</id>
+    <content type="html"><![CDATA[<p>First of all you have to add your user to the dialout group which is used in
+ubuntu for all serial or usb devices that can perform some kind of /dialouty/
+activity.</p>
+
+<p>For the user to have access to that group it is better to logout and
+login again to get the GUI to receive the new Groups.</p>
+
+<p>In the next step you have to browse to your <em>wineprefix directory</em>
+that in my case resides in $HOME/.PlayOnLinux/wineprefix/nTrip .</p>
+
+<p>{% codeblock %}
+sudo adduser $USER dialout          # adds your user to the dialout group
+cd $HOME/.wine/                     # enter your directory here
+ln -s /dev/ttyUSB0 dosdevices/com1  # /dev/ttyS0 for the first serial port
+{% endcodeblock %}</p>
+
+<p>Have Fun.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Android and Ubuntu]]></title>
+    <link href="http://bse666.github.io/blog/2014/06/12/android-and-ubuntu/"/>
+    <updated>2014-06-12T08:24:00+02:00</updated>
+    <id>http://bse666.github.io/blog/2014/06/12/android-and-ubuntu</id>
+    <content type="html"><![CDATA[<h4>The easiest way to flash your Smartphone:</h4>
+
+<h5>First install the android tools</h5>
 
 <p><code>bash
-WINEPREFIX="$HOME/prefix32" WINEARCH='win32' wine 'wineboot'
-WINEPREFIX="$HOME/prefix32" WINEARCH='win32' winetricks vcredist2005
+sudo apt-get install android-tools-adb android-tools-fastboot
 </code></p>
+
+<h5>reboot your phone into recovery</h5>
+
+<p>For my nexus 4 it is holding down the powerbutton and the volume down key since
+the recovery appears.</p>
+
+<h5>plug the phone into your computer and sideload your android image</h5>
+
+<p>adb sideload cm-11-*.zip
+adb sideload gapps-*.zip</p>
+
+<h5>have fun! :)</h5>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Enable Sshd on Android]]></title>
+    <link href="http://bse666.github.io/blog/2014/04/28/how-to-sshd-on-android/"/>
+    <updated>2014-04-28T00:00:00+02:00</updated>
+    <id>http://bse666.github.io/blog/2014/04/28/how-to-sshd-on-android</id>
+    <content type="html"><![CDATA[<p>If you love android as much as me for it&rsquo;s customizing capabilities you will
+love this tutorial. I try to do much on the commandline and use as many
+automation as possible for this purpose.
+I got the Code references from the <a href="http://wiki.cyanogenmod.org/w/Doc:_sshd">CM Wiki</a>.
+So here it is, my sshd on Android Tutorial.</p>
+
+<h2>Why use this long tutorial when there is an app for it?</h2>
+
+<p>Because there is an APP for it. One more APP you have to install for things that
+are already on your phone.</p>
+
+<h2>Step 1</h2>
+
+<p>Install a custom ROM like Cyanogenmod or PAC-ROM. Here are many possibilities to
+customize your android experience.
+You have to unlock the developer options which will void your warranty in some
+countries.</p>
+
+<!-- more -->
+
+
+<h2>Here you are.</h2>
+
+<p>Assuming that you are already installed and ready. (Android tools for your
+distribution and such), there are a few things to do on your phone.
+Plug your phone into your computer and follow the next steps.</p>
+
+<h2>Developer Options</h2>
+
+<p>To unlock do the following:</p>
+
+<ul>
+<li>go to settings &ndash;> about device and tap 7 times continously on build number.</li>
+<li>enable USB Debugging in settings &ndash;> developer options</li>
+<li>also enable root for adb</li>
+</ul>
+
+
+<h2>Enter the shell</h2>
+
+<p>fire up your favourite terminal emulator and hack this into it.</p>
+
+<h3>connect to your phone</h3>
+
+<p>adb shell
+su</p>
+
+<h3>create the directory structure</h3>
+
+<p>mkdir -p /data/ssh/empty
+chmod 700 /data/ssh
+chmod 700 /data/ssh/empty</p>
+
+<h3>create the host keys</h3>
+
+<p>ssh-keygen -t dsa -f /data/ssh/ssh_host_dsa_key -N &ldquo;&rdquo;
+chmod 600 /data/ssh/ssh_host_dsa_key
+ssh-keygen -t rsa -f /data/ssh/ssh_host_rsa_key -N &ldquo;&rdquo;
+chmod 600 /data/ssh/ssh_host_rsa_key</p>
+
+<h3>configure your sshd server</h3>
+
+<p>cat /system/etc/ssh/sshd_config | \
+sed &rsquo;s/#PermitRootLogin yes$/PermitRootLogin yes/&lsquo; | \
+sed &rsquo;s/#PubkeyAuthentication yes/PubkeyAuthentication yes/&rsquo; | \
+sed &rsquo;s/#PasswordAuthentication yes/PasswordAuthentication no/&lsquo; | \
+sed &rsquo;s/#PermitEmptyPasswords no/PermitEmptyPasswords no/&rsquo; | \
+sed &rsquo;s/#ChallengeResponseAuthentication
+yes/ChallengeResponseAuthentication no/&lsquo; | \
+sed &rsquo;s;/usr/libexec/sftp-server;internal-sftp;&rsquo; > \
+/data/ssh/sshd_config
+chmod 600 /data/ssh/sshd_config</p>
+
+<h3>create your private key</h3>
+
+<p>mkdir -p /data/.ssh
+chmod 700 /data/.ssh
+ssh-keygen -t rsa -f /data/.ssh/id_rsa
+chmod 600 /data/.ssh/id_rsa
+cat /data/.ssh/id_rsa.pub > /data/.ssh/authorized_keys
+chmod 600 /data/.ssh/authorized_keys
+```</p>
+
+<h2>Fire it up</h2>
+
+<p>With the following command you are able to start and stop the server. How you
+inject them into your android system is up to you, but i recommend something
+like Tasker to enable or disable the Server in trusted environments.</p>
+
+<p><code>
+/system/bin/sshd -f /data/ssh/sshd_config
+</code></p>
+
+<p><code>
+killall sshd
+</code></p>
+
+<p>Both of these lines have to run as root.</p>
+
+<p>And here you are with your own made ssh Server with only just yourself. Beside
+that you also have learned how to enter your phone over usb cable and gain root.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Terminal Fun]]></title>
+    <link href="http://bse666.github.io/blog/2014/03/07/terminal-fun/"/>
+    <updated>2014-03-07T00:00:00+01:00</updated>
+    <id>http://bse666.github.io/blog/2014/03/07/terminal-fun</id>
+    <content type="html"><![CDATA[<p>My plan is to ban the mouse out of my daily use System&rsquo;s and be productive too.
+In this Post i present some tools that can help me do that.</p>
+
+<p>Daily work, so what do i have to tweak?
+The Web Browser is startet with the login of course and then there is the Text
+Editing that has to be taken care of. Music and other tools have to be managed.
+One still can&rsquo;t throw away the graphical power browsers but i found some tools
+to take care of the first steps into mouseless using your computer.</p>
+
+<p>As i reviewed in one of my Posts.
+Take this list as a first time contact.</p>
+
+<h2>My Tools</h2>
+
+<ul>
+<li><a href="https://wiki.archlinux.org/index.php/Rxvt-unicode">urxvt</a> (extendable terminal)
+
+<ul>
+<li><a href="http://ethanschoonover.com/solarized">solarized-theme</a> (best eye friendly
+theme ever)</li>
+<li><a href="http://musicpd.org">mpd</a> (Music Player Daemon)
+
+<ul>
+<li><a href="http://ncmpcpp.rybczak.net/">ncmpcpp</a> (gui for mpd)</li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Tmux">tmux</a> (Terminal Multiplexer aka the better screen)</li>
+<li><a href="https://wiki.archlinux.org/index.php/Ranger">ranger</a> (file manager for the console)</li>
+<li><a href="http://zsh.sourceforge.net/">zsh</a> (programmable and fully customizable shell)
+
+<ul>
+<li><a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a> (script collection for zsh)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://www.mozilla.org/firefox">firefox</a></li>
+<li><a href="http://www.vimperator.org/">vimperator</a> (vim like bindings for firefox)
+
+<ul>
+<li>scripting the web</li>
+</ul>
+</li>
+<li>duckduckgoplus (search-engine alternative)</li>
+<li>noscript (block the tracking scripts and annoying popups)</li>
+<li>adblock plus (block the spam)</li>
+<li><a href="http://vim.org">vim</a> (very hard in the beginning but it&rsquo;s worth it)
+
+<ul>
+<li>ctrlp (fast file opener)</li>
+<li>jekyll.vim (jekyll blog edit help)</li>
+<li>solarized (solarized theme)</li>
+<li>tagbar</li>
+<li>vim-airline (slim powerline without python)</li>
+<li>vim-colors-solarized</li>
+<li>vim-fugitive</li>
+<li>vim-misc</li>
+<li>vim-notes (Write Notes into your Dropbox)</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Puppet in the end</h2>
+
+<p>for more easy configuration i developed a puppet script that installs all that
+for you. <em>HOW TO PUPPET LINK</em>
+In the future there will be an dotfiles repository from me for the coolest
+settings by far for the most of the tools.</p>
+
+<h2>a little configuration</h2>
+
+<p><em>DOTFILES REPO FOR THE MASSES</em></p>
 ]]></content>
   </entry>
   
