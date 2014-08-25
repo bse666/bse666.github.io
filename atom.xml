@@ -4,7 +4,7 @@
   <title><![CDATA[Home of BSE]]></title>
   <link href="http://bse666.github.io/atom.xml" rel="self"/>
   <link href="http://bse666.github.io/"/>
-  <updated>2014-08-25T11:52:15+02:00</updated>
+  <updated>2014-08-25T11:52:38+02:00</updated>
   <id>http://bse666.github.io/</id>
   <author>
     <name><![CDATA[bse]]></name>
@@ -288,6 +288,19 @@ the recovery appears.</p>
 adb sideload gapps-*.zip</p>
 
 <h5>have fun! :)</h5>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Vim Things]]></title>
+    <link href="http://bse666.github.io/blog/2014/05/27/vim-things/"/>
+    <updated>2014-05-27T16:10:00+02:00</updated>
+    <id>http://bse666.github.io/blog/2014/05/27/vim-things</id>
+    <content type="html"><![CDATA[<ul>
+<li>MRU</li>
+<li>Snipmates-snippets</li>
+</ul>
+
 ]]></content>
   </entry>
   
@@ -620,6 +633,17 @@ settings by far for the most of the tools.</p>
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[Jeopardy]]></title>
+    <link href="http://bse666.github.io/blog/2014/03/07/jeopardy/"/>
+    <updated>2014-03-07T00:00:00+01:00</updated>
+    <id>http://bse666.github.io/blog/2014/03/07/jeopardy</id>
+    <content type="html"><![CDATA[<p><a href="https://github.com/chlange/jeopardy">jeopardy</a></p>
+
+<p>Ein Spiel für alle.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Silverlight Videos on Linux]]></title>
     <link href="http://bse666.github.io/blog/2014/02/21/silverlight-videos-on-linux/"/>
     <updated>2014-02-21T00:00:00+01:00</updated>
@@ -649,6 +673,32 @@ browser and a dedicated one.</p>
 <p>go out there and
 Happy Silverlighting&hellip;</p>
 ]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[IPv6 Private Adresses in Linux]]></title>
+    <link href="http://bse666.github.io/blog/2014/02/10/ipv6-private-adresses-in-linux/"/>
+    <updated>2014-02-10T00:00:00+01:00</updated>
+    <id>http://bse666.github.io/blog/2014/02/10/ipv6-private-adresses-in-linux</id>
+    <content type="html"><![CDATA[<p>To activate the private Adress room in Ubuntu you have to add the following
+line to your /etc/sysctl.conf:</p>
+
+<blockquote><p>net.ipv6.conf.all.use_tempaddr=2</p></blockquote>
+
+<p>!!!!!!!!!!!!! Funktioniert noch nicht so richtig!neinein! &hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[VIM the Most Text Editor of All]]></title>
+    <link href="http://bse666.github.io/blog/2014/02/07/vim-the-most-text-editor-of-all/"/>
+    <updated>2014-02-07T00:00:00+01:00</updated>
+    <id>http://bse666.github.io/blog/2014/02/07/vim-the-most-text-editor-of-all</id>
+    <content type="html"><![CDATA[
+	<ol>
+		<li>Things for the masses</li>
+	</ol></li>
+	<li>vim-cheat-sheet]]></content>
   </entry>
   
   <entry>
@@ -821,43 +871,6 @@ If you want to know more contect me and let me know.</div>
     <content type="html"><![CDATA[<div class="css-full-post-content js-full-post-content">
 &#8220;Git ist eine <a href="http://de.wikipedia.org/wiki/Freie_Software" title="Freie Software">freie Software</a> zur verteilten <a href="http://de.wikipedia.org/wiki/Versionsverwaltung" title="Versionsverwaltung">Versionsverwaltung</a> von Dateien, die ursprünglich für die Quellcode-Verwaltung des Kernels <a href="http://de.wikipedia.org/wiki/Linux_%28Kernel%29" title="Linux (Kernel)">Linux</a> entwickelt wurde.&#8221;<br />- Wikipedia -<br /><br />Git kann gut und gerne viele Daten verwalten.<br />Der Vorteil von Git gegenüber &#8220;normalen&#8221; VCS (Version Control System) liegt klar auf der Hand.<br /><br /><ul><li>Die Bedienung ist um einiges einfacher.</li><li>Komplexe Merge-Strukturen werden meist automatisch abgearbeitet.</li><li>Verwaltung von vielen Binärdateien</li><li>Schnelles Austeilen der Repositories durch &#8220;packen&#8221;</li></ul>&nbsp;Als Beispiel nehmen wir hier ein Linux System auf dem Git installiert wird.<br />Debian hat sich mittlerweile bei mir sehr fein eingebürgert auf Serversystemen.<br /><blockquote class="tr_bq">$ apt-get install git</blockquote>Das war es auch schon. :)<br />Bevor wir starten sollten erstmal die Userdaten gesetzt werden.<br /><blockquote class="tr_bq">$ git config &#8211;global user.name &#8220;Name Hier Hin&#8221;<br />$ git config &#8211;global user.email&nbsp; Name@meinedomain.firma.com</blockquote>Es geht nun weiter mit dem Erstellen eines Repository.<br /><blockquote class="tr_bq">$ mkdir project.git<br />$ cd project.git<br />$ git init</blockquote>Mit Hilfe von &#8220;git init&#8221; kann das aktuelle Verzeichnis schnell zu einem Git Repository umgewandelt werden. Es wird nun ein &#8220;.git&#8221; Ordner erstellt in dem Git seine Datenbank pflegt. <br />Nun werden wir neue Dateien hinzufügen. Diese können natürlich auch hineinkopiert werden.<br /><blockquote class="tr_bq">$ echo &#8220;test&#8221; &gt; NewFile<br />$ git add NewFile</blockquote>Mit &#8220;git add <file>&#8221; können Dateien oder Ordnerstrukturen zur Versionierung hinzugefügt werden. Wenn man nun das ganze &#8220;committed&#8221;, also die Änderungen abspeichern will macht man dies wie folgt:</file><br /><blockquote class="tr_bq">$ git commit -a</blockquote>Nun öffnet sich der favorisierte Consolen Editor in dem man dann einen Commit-Grund angeben kann wie z.B. &#8220;Erster Commit. Repo mit Daten gefüllt.&#8221;. Dann speichert man dies ab und Git errechnet die Hash-Werte der Dateien und pflegt all dies unter seinem .git Verzeichnis.<br />Nun kann man auch gerne mit Branches rumspielen.<br /><blockquote class="tr_bq">$ git branch #listet alle Branches<br />$ git branch neueBranch # erstellt eine neue Branch mit dem Namen: &#8220;neueBranch&#8221;</blockquote>Branches sind gut für die Erarbeitung neuer Features.<br /><br /><h4 style="background-color: red;">Die wichtigste Regel bei der Nutzung von git:</h4><div style="text-align: left;"><blockquote class="tr_bq"><h4><span style="background-color: red;">Commit, Commit, Commit.</span><br style="background-color: red;" /><span style="background-color: red;">Es kann nie genug commit&#8217;ted werden.</span></h4></blockquote></div>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Mac Kennwort Vergessen]]></title>
-    <link href="http://bse666.github.io/blog/2012/07/26/mac-kennwort-vergessen/"/>
-    <updated>2012-07-26T08:02:00+02:00</updated>
-    <id>http://bse666.github.io/blog/2012/07/26/mac-kennwort-vergessen</id>
-    <content type="html"><![CDATA[<p>How to recreate an Admin Account on a MAC:</p>
-
-<blockquote><p>hold CMD-S or WIN-S and power on the MAC.</p></blockquote>
-
-<p>now some manual editing:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>fsck -y
-</span><span class='line'>
-</span><span class='line'>mount -uaw /
-</span><span class='line'>
-</span><span class='line'>rm /var/db/.AppleSetupDone
-</span><span class='line'>
-</span><span class='line'>reboot</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The System now thinks it is not even Set Up yet.
-Now you will be creating a new User and go through the Setup process.
-This user becomes an Administrator on the Mac after the setup.</p>
-
-<p>Have fun.</p>
-
-<p>After writing this i saw the <a href="http://instant-thinking.de/2008/02/14/mac-os-x-passwort-vergessen/">Article from Dennis</a></p>
 ]]></content>
   </entry>
   
