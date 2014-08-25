@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Wine | Home of BSE]]></title>
   <link href="http://bse666.github.io/blog/categories/wine/atom.xml" rel="self"/>
   <link href="http://bse666.github.io/"/>
-  <updated>2014-08-18T11:19:49+02:00</updated>
+  <updated>2014-08-25T11:52:14+02:00</updated>
   <id>http://bse666.github.io/</id>
   <author>
     <name><![CDATA[bse]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Winy Wine]]></title>
+    <link href="http://bse666.github.io/blog/2014/08/18/winy-wine/"/>
+    <updated>2014-08-18T13:50:00+02:00</updated>
+    <id>http://bse666.github.io/blog/2014/08/18/winy-wine</id>
+    <content type="html"><![CDATA[<p>Getting things done with wine on linux is cool, but you have to seperate working
+directories if you want to be able to cleanly remove or install another
+application side by side. Here i have a few tips for you to make yout first
+steps into that.</p>
+
+<p><code>bash
+WINEPREFIX="$HOME/prefix32" WINEARCH='win32' wine 'wineboot'
+WINEPREFIX="$HOME/prefix32" WINEARCH='win32' winetricks vcredist2005
+</code></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Serial and USB Action With Wine]]></title>

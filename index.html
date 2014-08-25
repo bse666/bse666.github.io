@@ -9,8 +9,9 @@
   <meta name="author" content="bse">
 
   
-  <meta name="description" content="If you are in the situation to deal with many zfs snapshots that are not needed
-anymore you can try this. !!! USE AT YOUR OWN RISK !!! Deletes all &hellip;">
+  <meta name="description" content="What can you do to bring Music to your home and how can Linux help you with
+that?
+In the following i will try to give you an overview from my &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,6 +72,7 @@ anymore you can try this. !!! USE AT YOUR OWN RISK !!! Deletes all &hellip;">
 <ul class="main-navigation">
   <li><a href="/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about-me">About Me</a></li>
 </ul>
 
 </nav>
@@ -78,6 +80,112 @@ anymore you can try this. !!! USE AT YOUR OWN RISK !!! Deletes all &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/08/20/music-your-home-with-linux/">Music Your Home With Linux</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-20T18:49:00+02:00" pubdate data-updated="true">Aug 20<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>What can you do to bring Music to your home and how can Linux help you with
+that?
+In the following i will try to give you an overview from my experience point.</p>
+
+<h3>The Idea</h3>
+
+<p>I had the idea to have the same music playing in the living room as out in the
+garden and to be as perfect as it can to have it synchronized playing so that
+you can walk out and hear the music as it plays inside.</p>
+
+<h5>Database</h5>
+
+<p>Database is with many format&rsquo;s and not synchronized with anything like iTunes or
+other Media Organizers.</p>
+
+<h5>Player</h5>
+
+<p>The player has to be controllable from many System&rsquo;s i use Linux, Windows
+and Android.
+With that criterias not many players are out there. The player of choice is mpd.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/08/20/music-your-home-with-linux/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/08/18/winy-wine/">Winy Wine</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-18T13:50:00+02:00" pubdate data-updated="true">Aug 18<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Getting things done with wine on linux is cool, but you have to seperate working
+directories if you want to be able to cleanly remove or install another
+application side by side. Here i have a few tips for you to make yout first
+steps into that.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">WINEPREFIX</span><span class="o">=</span><span class="s2">&quot;$HOME/prefix32&quot;</span> <span class="nv">WINEARCH</span><span class="o">=</span><span class="s1">&#39;win32&#39;</span> wine <span class="s1">&#39;wineboot&#39;</span>
+</span><span class='line'><span class="nv">WINEPREFIX</span><span class="o">=</span><span class="s2">&quot;$HOME/prefix32&quot;</span> <span class="nv">WINEARCH</span><span class="o">=</span><span class="s1">&#39;win32&#39;</span> winetricks vcredist2005
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -604,139 +712,6 @@ Happy Silverlighting&hellip;</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/02/07/nethack-4/">Nethack 4</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-02-07T00:00:00+01:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>There are many clones in the Nethack Community.
-Here is one that i learned to love the most.</p>
-
-<p><a href="http://tung.github.io/DynaHack/">dynahack</a> is the way to go.
-Download the latest source or git clone it.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git clone https://github.com/tung/DynaHack
-</span><span class='line'>cd DynaHack
-</span><span class='line'>sudo apt-get install gcc flex bison libncursesw5-dev libjansson-dev \
-</span><span class='line'>zlib1g-dev cmake cmake-curses-gui
-</span><span class='line'>mkdir build
-</span><span class='line'>cd build
-</span><span class='line'>cmake ..
-</span><span class='line'>ccmake .</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Set SHELLDIR and CMAKE_INSTALL_PREFIX to /home/username/dynahack/install.</p>
-
-<p>Set BINDIR, DATADIR and LIBDIR to /home/username/dynahack/install/dynahack-data.</p>
-
-<p>Press &lsquo;c&rsquo; to configure, then &lsquo;g&rsquo; to generate the build files and exit.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>make install</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And now have a blast shredding through the dungeons.
-&lt;SHIFT-S> saves the game.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/02/07/cannonball-%28the-outrun-engine%29/">Cannonball (the OutRun Engine)</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-02-07T00:00:00+01:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>How to install cannonball the outrun engine on your own PC for the ultimate
-Retro Experience on Ubuntu/Debian Derivates. With Windows the Process is defined on the <a href="https://github.com/djyt/cannonball.git">github page</a>.</p>
-
-<div>
-  <pre><code class='bash'>DIRRECTORY=~/git
-mkdir $DIRRECTORY
-git clone https://github.com/djyt/cannonball.git $DIRRECTORY/cannonball
-cd $DIRRECTORY/cannonball
-# could not get it to target debian
-cp cmake/debian.cmake cmake/default.cmake
-mkdir build
-cd build
-sudo apt-get install cmake libsdl1.2-dev libboost1.53-dev -yy
-cmake ../cmake
-make
-ln -s ../roms roms
-# now put your &quot;OutRun Rev.B romset in the roms dir.
-# and off you go by
-
-./cannonball</code></pre>
-</div>
-
-
-<p>Navigate to the options menu with the Arrow keys and &ldquo;1&rdquo; as &ldquo;Enter&rdquo;.
-Edit your keys to your behaviours.
-And Blast off to one of the coolest Gaming Machine Games
-of the last Century.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -752,6 +727,14 @@ of the last Century.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/08/20/music-your-home-with-linux/">Music Your Home With Linux</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/08/18/winy-wine/">Winy Wine</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/08/14/deleting-zfs-snapshots/">Deleting ZFS Snapshots</a>
       </li>
     
@@ -761,14 +744,6 @@ of the last Century.</p>
     
       <li class="post">
         <a href="/blog/2014/06/29/serial-and-usb-action-with-wine/">Serial and USB Action With Wine</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/06/12/android-and-ubuntu/">Android and Ubuntu</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/05/18/my-best-vim-config-dip-s/">My Best Vim Config Dip&#8217;s</a>
       </li>
     
   </ul>

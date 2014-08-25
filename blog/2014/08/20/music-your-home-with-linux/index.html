@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Music Your Home With Linux - Home of BSE</title>
+  <meta name="author" content="bse">
+
+  
+  <meta name="description" content="What can you do to bring Music to your home and how can Linux help you with
+that?
+In the following i will try to give you an overview from my &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://bse666.github.io/blog/2014/08/20/music-your-home-with-linux">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Home of BSE" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51180608-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Home of BSE</a></h1>
+  
+    <h2>thoughts and notes</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:bse666.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about-me">About Me</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Music Your Home With Linux</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-20T18:49:00+02:00" pubdate data-updated="true">Aug 20<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>What can you do to bring Music to your home and how can Linux help you with
+that?
+In the following i will try to give you an overview from my experience point.</p>
+
+<h3>The Idea</h3>
+
+<p>I had the idea to have the same music playing in the living room as out in the
+garden and to be as perfect as it can to have it synchronized playing so that
+you can walk out and hear the music as it plays inside.</p>
+
+<h5>Database</h5>
+
+<p>Database is with many format&rsquo;s and not synchronized with anything like iTunes or
+other Media Organizers.</p>
+
+<h5>Player</h5>
+
+<p>The player has to be controllable from many System&rsquo;s i use Linux, Windows
+and Android.
+With that criterias not many players are out there. The player of choice is mpd.</p>
+
+<!-- more -->
+
+
+<p>The Music Player Deamon is a tiny little program that runs on top of sort of all
+OS&rsquo;s and can be controled by many clients.
+mpd can put out a the sound direct onto a soundcard, http stream with internal
+http server or onto another mp3 stream serving facility like icecast.</p>
+
+<h5>Transport Protocol</h5>
+
+<p>To get the Music out in the wild i would like to get multicasting for
+synchronous play or some sort of that.
+In case of http output stream i would have to get the stream out with another
+program like VLC to create a multicast stream for the network.</p>
+
+<h4>Mediums</h4>
+
+<h5>WLAN is not good for Audio abuse.</h5>
+
+<p>For me i have not a network cable in the garden and have to stick with wlan for
+that purpose. So the Tests with this <em>over the air medium</em> not as expected.
+The lag was extraordinary big from lan to wlan so that you listened to the
+refrain inside and when you got out it played again. That was so annoying that
+i cut the multicast idea from here on.</p>
+
+<h5>LAN</h5>
+
+<p>LAN is fast, stable and the way to go with if you have cable connection.</p>
+
+<h3>The Future</h3>
+
+<pre><code>* metadatarized Database
+* multicast over the air without much lag
+</code></pre>
+
+<h3>Configs</h3>
+
+<p>For i can not say what your preferenced settings are here are some of mine:</p>
+
+<figure class='code'><figcaption><span>&#8220;/etc/mpd.conf&#8221; </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c"># Options</span>
+</span><span class='line'>restore_paused <span class="s2">&quot;yes&quot;</span>
+</span><span class='line'>auto_update <span class="s2">&quot;yes&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># Permissions</span>
+</span><span class='line'>password            <span class="s2">&quot;password@read,add,control,admin&quot;</span>
+</span><span class='line'>default_permissions <span class="s2">&quot;read,add,control&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># Input</span>
+</span><span class='line'><span class="c"># for opening http streams</span>
+</span><span class='line'>input <span class="o">{</span>
+</span><span class='line'>   plugin <span class="s2">&quot;curl&quot;</span>
+</span><span class='line'>   <span class="c">#proxy &quot;proxy.isp.com:8000&quot;</span>
+</span><span class='line'>   <span class="c">#proxy_user &quot;user&quot;</span>
+</span><span class='line'>   <span class="c">#proxy_password &quot;password&quot;</span>
+</span><span class='line'>   <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># Audio Output</span>
+</span><span class='line'>audio_output <span class="o">{</span>
+</span><span class='line'>   <span class="nb">type</span> <span class="s2">&quot;alsa&quot;</span>
+</span><span class='line'>   name <span class="s2">&quot;My Alsa Mixer&quot;</span>
+</span><span class='line'>   <span class="o">}</span>
+</span><span class='line'>audio_output <span class="o">{</span>
+</span><span class='line'>   <span class="nb">type</span> <span class="s2">&quot;httpd&quot;</span>
+</span><span class='line'>   name <span class="s2">&quot;My httpd Output&quot;</span>
+</span><span class='line'>   encoder <span class="s2">&quot;lame&quot;</span>
+</span><span class='line'>   port    <span class="s2">&quot;8000&quot;</span>
+</span><span class='line'>   bitrate <span class="s2">&quot;256&quot;</span>
+</span><span class='line'>   format  <span class="s2">&quot;44100:16:2&quot;</span>
+</span><span class='line'>   max_clients  <span class="s2">&quot;3&quot;</span>
+</span><span class='line'>   <span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Install</h3>
+
+<h4>Ubuntu</h4>
+
+<pre><code>sudo apt install mpd
+</code></pre>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">bse</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-20T18:49:00+02:00" pubdate data-updated="true">Aug 20<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/linux-windows-music/'>linux,windows,music</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://bse666.github.io/blog/2014/08/20/music-your-home-with-linux/" data-via="bse666" data-counturl="http://bse666.github.io/blog/2014/08/20/music-your-home-with-linux/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/08/18/winy-wine/" title="Previous Post: Winy Wine">&laquo; Winy Wine</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/08/20/music-your-home-with-linux/">Music Your Home With Linux</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/08/18/winy-wine/">Winy Wine</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/08/14/deleting-zfs-snapshots/">Deleting ZFS Snapshots</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/06/29/how-to-create-an-iso-in-linux./">How to Create an ISO in Linux.</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/06/29/serial-and-usb-action-with-wine/">Serial and USB Action With Wine</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/bse666">@bse666</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'bse666',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - bse -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Linux,windows,music | Home of BSE]]></title>
+  <link href="http://bse666.github.io/blog/categories/linux-windows-music/atom.xml" rel="self"/>
+  <link href="http://bse666.github.io/"/>
+  <updated>2014-08-25T11:52:14+02:00</updated>
+  <id>http://bse666.github.io/</id>
+  <author>
+    <name><![CDATA[bse]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Music Your Home With Linux]]></title>
+    <link href="http://bse666.github.io/blog/2014/08/20/music-your-home-with-linux/"/>
+    <updated>2014-08-20T18:49:00+02:00</updated>
+    <id>http://bse666.github.io/blog/2014/08/20/music-your-home-with-linux</id>
+    <content type="html"><![CDATA[<p>What can you do to bring Music to your home and how can Linux help you with
+that?
+In the following i will try to give you an overview from my experience point.</p>
+
+<h3>The Idea</h3>
+
+<p>I had the idea to have the same music playing in the living room as out in the
+garden and to be as perfect as it can to have it synchronized playing so that
+you can walk out and hear the music as it plays inside.</p>
+
+<h5>Database</h5>
+
+<p>Database is with many format&rsquo;s and not synchronized with anything like iTunes or
+other Media Organizers.</p>
+
+<h5>Player</h5>
+
+<p>The player has to be controllable from many System&rsquo;s i use Linux, Windows
+and Android.
+With that criterias not many players are out there. The player of choice is mpd.</p>
+
+<!-- more -->
+
+
+<p>The Music Player Deamon is a tiny little program that runs on top of sort of all
+OS&rsquo;s and can be controled by many clients.
+mpd can put out a the sound direct onto a soundcard, http stream with internal
+http server or onto another mp3 stream serving facility like icecast.</p>
+
+<h5>Transport Protocol</h5>
+
+<p>To get the Music out in the wild i would like to get multicasting for
+synchronous play or some sort of that.
+In case of http output stream i would have to get the stream out with another
+program like VLC to create a multicast stream for the network.</p>
+
+<h4>Mediums</h4>
+
+<h5>WLAN is not good for Audio abuse.</h5>
+
+<p>For me i have not a network cable in the garden and have to stick with wlan for
+that purpose. So the Tests with this <em>over the air medium</em> not as expected.
+The lag was extraordinary big from lan to wlan so that you listened to the
+refrain inside and when you got out it played again. That was so annoying that
+i cut the multicast idea from here on.</p>
+
+<h5>LAN</h5>
+
+<p>LAN is fast, stable and the way to go with if you have cable connection.</p>
+
+<h3>The Future</h3>
+
+<pre><code>* metadatarized Database
+* multicast over the air without much lag
+</code></pre>
+
+<h3>Configs</h3>
+
+<p>For i can not say what your preferenced settings are here are some of mine:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&ldquo;/etc/mpd.conf&rdquo; </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;Options&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;restore_paused &amp;ldquo;yes&amp;rdquo;
+</span><span class='line'>auto_update &amp;ldquo;yes&amp;rdquo;&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;Permissions&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;password            &amp;ldquo;password@read,add,control,admin&amp;rdquo;
+</span><span class='line'>default_permissions &amp;ldquo;read,add,control&amp;rdquo;&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;Input&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;for opening http streams&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;input <span class="o">{</span>
+</span><span class='line'>   plugin &amp;ldquo;curl&amp;rdquo;
+</span><span class='line'>   <span class="c">#proxy &amp;ldquo;proxy.isp.com:8000&amp;rdquo;</span>
+</span><span class='line'>   <span class="c">#proxy_user &amp;ldquo;user&amp;rdquo;</span>
+</span><span class='line'>   <span class="c">#proxy_password &amp;ldquo;password&amp;rdquo;</span>
+</span><span class='line'>   <span class="o">}</span>&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;Audio Output&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;audio_output <span class="o">{</span>
+</span><span class='line'>   <span class="nb">type</span> &amp;ldquo;alsa&amp;rdquo;
+</span><span class='line'>   name &amp;ldquo;My Alsa Mixer&amp;rdquo;
+</span><span class='line'>   <span class="o">}</span>
+</span><span class='line'>audio_output <span class="o">{</span>
+</span><span class='line'>   <span class="nb">type</span> &amp;ldquo;httpd&amp;rdquo;
+</span><span class='line'>   name &amp;ldquo;My httpd Output&amp;rdquo;
+</span><span class='line'>   encoder &amp;ldquo;lame&amp;rdquo;
+</span><span class='line'>   port    &amp;ldquo;8000&amp;rdquo;
+</span><span class='line'>   bitrate &amp;ldquo;256&amp;rdquo;
+</span><span class='line'>   format  &amp;ldquo;44100:16:2&amp;rdquo;
+</span><span class='line'>   max_clients  &amp;ldquo;3&amp;rdquo;
+</span><span class='line'>   <span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h3>Install</h3>
+
+<h4>Ubuntu</h4>
+
+<pre><code>sudo apt install mpd
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>
