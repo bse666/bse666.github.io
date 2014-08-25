@@ -4,8 +4,8 @@ title: "Music your home with linux"
 published: true
 date: 2014-08-20 18:49
 comments: true
-tags: linux,windows,mpd,music
-categories: linux,windows,music
+tags: linux windows mpd music
+categories: linux windows music
 ---
 
 What can you do to bring Music to your home and how can Linux help you with

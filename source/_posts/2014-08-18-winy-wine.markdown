@@ -4,8 +4,8 @@ title: "Winy Wine"
 published: true
 date: 2014-08-18 13:50
 comments: false
-tags: linux, wine
-categories: linux, wine
+tags: linux wine
+categories: linux wine
 ---
 Getting things done with wine on linux is cool, but you have to seperate working
 directories if you want to be able to cleanly remove or install another
