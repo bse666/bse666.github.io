@@ -2,86 +2,98 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://bse666.github.io/blog/2012/07/26/mac-kennwort-vergessen/</loc>
-        <lastmod>2014-05-27T15:58:35+02:00</lastmod>
+        <lastmod>2014-05-19T14:39:18+02:00</lastmod>
     </url>
     <url>
         <loc>http://bse666.github.io/blog/2012/10/05/Git-fuer-alles/</loc>
-        <lastmod>2014-05-27T15:58:35+02:00</lastmod>
-    </url>
-    <url>
-        <loc>http://bse666.github.io/blog/2013/04/30/Music-in-linux/</loc>
-        <lastmod>2014-05-27T15:58:35+02:00</lastmod>
+        <lastmod>2014-05-19T14:39:18+02:00</lastmod>
     </url>
     <url>
         <loc>http://bse666.github.io/blog/2013/09/22/tmux-terminalmultiplexer/</loc>
-        <lastmod>2014-05-27T15:58:35+02:00</lastmod>
+        <lastmod>2014-05-19T14:39:18+02:00</lastmod>
     </url>
     <url>
         <loc>http://bse666.github.io/blog/2014/02/06/new-blog-in-da-house/</loc>
-        <lastmod>2014-05-27T15:58:35+02:00</lastmod>
+        <lastmod>2014-05-19T14:39:18+02:00</lastmod>
     </url>
     <url>
         <loc>http://bse666.github.io/blog/2014/02/07/cannonball-%28the-outrun-engine%29/</loc>
-        <lastmod>2014-08-18T09:08:05+02:00</lastmod>
+        <lastmod>2014-08-26T21:15:55+02:00</lastmod>
     </url>
     <url>
         <loc>http://bse666.github.io/blog/2014/02/07/nethack-4/</loc>
-        <lastmod>2014-08-18T09:08:05+02:00</lastmod>
+        <lastmod>2014-08-26T21:15:55+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://bse666.github.io/blog/2014/02/07/vim-the-most-text-editor-of-all/</loc>
+        <lastmod>2014-08-26T21:15:55+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://bse666.github.io/blog/2014/02/10/ipv6-private-adresses-in-linux/</loc>
+        <lastmod>2014-05-19T14:39:18+02:00</lastmod>
     </url>
     <url>
         <loc>http://bse666.github.io/blog/2014/02/21/silverlight-videos-on-linux/</loc>
-        <lastmod>2014-05-27T15:58:35+02:00</lastmod>
+        <lastmod>2014-05-19T14:39:18+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://bse666.github.io/blog/2014/03/07/jeopardy/</loc>
+        <lastmod>2014-05-19T14:39:18+02:00</lastmod>
     </url>
     <url>
         <loc>http://bse666.github.io/blog/2014/03/07/terminal-fun/</loc>
-        <lastmod>2014-05-27T15:58:35+02:00</lastmod>
+        <lastmod>2014-05-19T14:39:18+02:00</lastmod>
     </url>
     <url>
         <loc>http://bse666.github.io/blog/2014/04/28/how-to-sshd-on-android/</loc>
-        <lastmod>2014-08-04T17:01:53+02:00</lastmod>
+        <lastmod>2014-08-26T21:15:55+02:00</lastmod>
     </url>
     <url>
         <loc>http://bse666.github.io/blog/2014/05/18/my-best-vim-config-dip-s/</loc>
-        <lastmod>2014-05-27T16:04:35+02:00</lastmod>
+        <lastmod>2014-08-26T21:15:55+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://bse666.github.io/blog/2014/05/27/vim-things/</loc>
+        <lastmod>2014-08-26T21:15:55+02:00</lastmod>
     </url>
     <url>
         <loc>http://bse666.github.io/blog/2014/06/12/android-and-ubuntu/</loc>
-        <lastmod>2014-08-18T11:16:37+02:00</lastmod>
+        <lastmod>2014-08-26T21:15:55+02:00</lastmod>
     </url>
     <url>
         <loc>http://bse666.github.io/blog/2014/06/29/serial-and-usb-action-with-wine/</loc>
-        <lastmod>2014-08-18T09:08:05+02:00</lastmod>
+        <lastmod>2014-08-26T21:15:55+02:00</lastmod>
     </url>
     <url>
         <loc>http://bse666.github.io/blog/2014/06/29/how-to-create-an-iso-in-linux./</loc>
-        <lastmod>2014-08-18T09:08:05+02:00</lastmod>
+        <lastmod>2014-08-26T21:15:55+02:00</lastmod>
     </url>
     <url>
         <loc>http://bse666.github.io/blog/2014/08/14/deleting-zfs-snapshots/</loc>
-        <lastmod>2014-08-18T09:08:05+02:00</lastmod>
+        <lastmod>2014-08-26T21:15:55+02:00</lastmod>
     </url>
     <url>
         <loc>http://bse666.github.io/blog/2014/08/18/winy-wine/</loc>
-        <lastmod>2014-08-25T14:36:14+02:00</lastmod>
+        <lastmod>2014-08-26T21:15:55+02:00</lastmod>
     </url>
     <url>
         <loc>http://bse666.github.io/blog/2014/08/20/music-your-home-with-linux/</loc>
-        <lastmod>2014-08-25T14:35:45+02:00</lastmod>
-    </url>
-    <url>
-        <loc>http://bse666.github.io/</loc>
-        <lastmod>2014-08-25T14:36:14+02:00</lastmod>
-    </url>
-    <url>
-        <loc>http://bse666.github.io/blog/archives/</loc>
-        <lastmod>2014-08-25T14:36:14+02:00</lastmod>
+        <lastmod>2014-08-26T21:15:55+02:00</lastmod>
     </url>
     <url>
         <loc>http://bse666.github.io/about/</loc>
-        <lastmod>2014-05-27T15:58:35+02:00</lastmod>
+        <lastmod>2014-05-19T14:39:18+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://bse666.github.io/</loc>
+        <lastmod>2014-08-26T21:15:55+02:00</lastmod>
     </url>
     <url>
         <loc>http://bse666.github.io/robots.txt</loc>
-        <lastmod>2014-05-27T15:58:35+02:00</lastmod>
+        <lastmod>2014-05-19T14:39:18+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://bse666.github.io/blog/archives/</loc>
+        <lastmod>2014-08-26T21:15:55+02:00</lastmod>
     </url>
 </urlset>
