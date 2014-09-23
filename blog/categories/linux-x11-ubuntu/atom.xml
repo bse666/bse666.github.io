@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Linux,x11,ubuntu | Home of BSE]]></title>
+  <link href="http://bse666.github.io/blog/categories/linux-x11-ubuntu/atom.xml" rel="self"/>
+  <link href="http://bse666.github.io/"/>
+  <updated>2014-09-23T19:54:18+02:00</updated>
+  <id>http://bse666.github.io/</id>
+  <author>
+    <name><![CDATA[bse]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Start an Application in Another Xserver]]></title>
+    <link href="http://bse666.github.io/blog/2014/09/23/start-an-application-in-another-xserver./"/>
+    <updated>2014-09-23T19:42:00+02:00</updated>
+    <id>http://bse666.github.io/blog/2014/09/23/start-an-application-in-another-xserver.</id>
+    <content type="html"><![CDATA[<p>Have you ever had the problem that you ran a game in fullscreen mode and after
+quitting it the desktop stands there with 640x480 and you can&rsquo;t get it back to
+normal but restarting your login manager or restarting your whole computer?</p>
+
+<h3>Now here is a solution.</h3>
+
+<p>Start your application in another xserver in which can be messed around alot and
+does not affect your normal desktop.</p>
+
+<h4>Fiddeling your XServer.</h4>
+
+<p>Edit your Xwrapper config
+<code>bash "/etc/X11/Xwrapper.config"
+allowed_users=anybody
+</code></p>
+
+<p>If your sound doesn&rsquo;t work try this + reboot:
+<code>bash "Add User to Group Audio"
+sudo adduser $USER audio
+</code></p>
+
+<h4>Start an application</h4>
+
+<p><code>bash "start a xterm in new desktop"
+xinit xterm %U -- :1
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>

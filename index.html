@@ -9,9 +9,8 @@
   <meta name="author" content="bse">
 
   
-  <meta name="description" content="What can you do to bring Music to your home and how can Linux help you with
-that?
-In the following i will try to give you an overview from my &hellip;">
+  <meta name="description" content="Have you ever had the problem that you ran a game in fullscreen mode and after
+quitting it the desktop stands there with 640x480 and you can&rsquo;t &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +78,72 @@ In the following i will try to give you an overview from my &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/09/23/start-an-application-in-another-xserver./">Start an Application in Another Xserver</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-23T19:42:00+02:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Have you ever had the problem that you ran a game in fullscreen mode and after
+quitting it the desktop stands there with 640x480 and you can&rsquo;t get it back to
+normal but restarting your login manager or restarting your whole computer?</p>
+
+<h3>Now here is a solution.</h3>
+
+<p>Start your application in another xserver in which can be messed around alot and
+does not affect your normal desktop.</p>
+
+<h4>Fiddeling your XServer.</h4>
+
+<p>Edit your Xwrapper config</p>
+
+<figure class='code'><figcaption><span>&#8220;/etc/X11/Xwrapper.config&#8221;</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">allowed_users</span><span class="o">=</span>anybody
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If your sound doesn&rsquo;t work try this + reboot:</p>
+
+<figure class='code'><figcaption><span>&#8220;Add User to Group Audio&#8221;</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo adduser <span class="nv">$USER</span> audio
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Start an application</h4>
+
+<figure class='code'><figcaption><span>&#8220;start a xterm in new desktop&#8221;</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>xinit xterm %U -- :1
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -418,46 +483,6 @@ adb sideload gapps-*.zip</p>
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/05/27/vim-things/">Vim Things</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-05-27T16:10:00+02:00" pubdate data-updated="true">May 27<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ul>
-<li>MRU</li>
-<li>Snipmates-snippets</li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
       <h1 class="entry-title"><a href="/blog/2014/05/18/my-best-vim-config-dip-s/">My Best Vim Config Dip&#8217;s</a></h1>
     
     
@@ -707,6 +732,10 @@ settings by far for the most of the tools.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/09/23/start-an-application-in-another-xserver./">Start an Application in Another Xserver</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/08/20/music-your-home-with-linux/">Music Your Home With Linux</a>
       </li>
     
@@ -720,10 +749,6 @@ settings by far for the most of the tools.</p>
     
       <li class="post">
         <a href="/blog/2014/06/29/how-to-create-an-iso-in-linux./">How to Create an ISO in Linux.</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/06/29/serial-and-usb-action-with-wine/">Serial and USB Action With Wine</a>
       </li>
     
   </ul>

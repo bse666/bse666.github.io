@@ -4,7 +4,7 @@
   <title><![CDATA[Home of BSE]]></title>
   <link href="http://bse666.github.io/atom.xml" rel="self"/>
   <link href="http://bse666.github.io/"/>
-  <updated>2014-08-26T22:29:39+02:00</updated>
+  <updated>2014-09-23T19:54:18+02:00</updated>
   <id>http://bse666.github.io/</id>
   <author>
     <name><![CDATA[bse]]></name>
@@ -12,6 +12,45 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Start an Application in Another Xserver]]></title>
+    <link href="http://bse666.github.io/blog/2014/09/23/start-an-application-in-another-xserver./"/>
+    <updated>2014-09-23T19:42:00+02:00</updated>
+    <id>http://bse666.github.io/blog/2014/09/23/start-an-application-in-another-xserver.</id>
+    <content type="html"><![CDATA[<p>Have you ever had the problem that you ran a game in fullscreen mode and after
+quitting it the desktop stands there with 640x480 and you can&rsquo;t get it back to
+normal but restarting your login manager or restarting your whole computer?</p>
+
+<h3>Now here is a solution.</h3>
+
+<p>Start your application in another xserver in which can be messed around alot and
+does not affect your normal desktop.</p>
+
+<h4>Fiddeling your XServer.</h4>
+
+<p>Edit your Xwrapper config</p>
+
+<figure class='code'><figcaption><span>&#8220;/etc/X11/Xwrapper.config&#8221;</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">allowed_users</span><span class="o">=</span>anybody
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If your sound doesn&rsquo;t work try this + reboot:</p>
+
+<figure class='code'><figcaption><span>&#8220;Add User to Group Audio&#8221;</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo adduser <span class="nv">$USER</span> audio
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Start an application</h4>
+
+<figure class='code'><figcaption><span>&#8220;start a xterm in new desktop&#8221;</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>xinit xterm %U -- :1
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Music Your Home With Linux]]></title>
@@ -288,19 +327,6 @@ the recovery appears.</p>
 adb sideload gapps-*.zip</p>
 
 <h5>have fun! :)</h5>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Vim Things]]></title>
-    <link href="http://bse666.github.io/blog/2014/05/27/vim-things/"/>
-    <updated>2014-05-27T16:10:00+02:00</updated>
-    <id>http://bse666.github.io/blog/2014/05/27/vim-things</id>
-    <content type="html"><![CDATA[<ul>
-<li>MRU</li>
-<li>Snipmates-snippets</li>
-</ul>
-
 ]]></content>
   </entry>
   
@@ -633,17 +659,6 @@ settings by far for the most of the tools.</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Jeopardy]]></title>
-    <link href="http://bse666.github.io/blog/2014/03/07/jeopardy/"/>
-    <updated>2014-03-07T00:00:00+01:00</updated>
-    <id>http://bse666.github.io/blog/2014/03/07/jeopardy</id>
-    <content type="html"><![CDATA[<p><a href="https://github.com/chlange/jeopardy">jeopardy</a></p>
-
-<p>Ein Spiel für alle.</p>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[Silverlight Videos on Linux]]></title>
     <link href="http://bse666.github.io/blog/2014/02/21/silverlight-videos-on-linux/"/>
     <updated>2014-02-21T00:00:00+01:00</updated>
@@ -673,32 +688,6 @@ browser and a dedicated one.</p>
 <p>go out there and
 Happy Silverlighting&hellip;</p>
 ]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[IPv6 Private Adresses in Linux]]></title>
-    <link href="http://bse666.github.io/blog/2014/02/10/ipv6-private-adresses-in-linux/"/>
-    <updated>2014-02-10T00:00:00+01:00</updated>
-    <id>http://bse666.github.io/blog/2014/02/10/ipv6-private-adresses-in-linux</id>
-    <content type="html"><![CDATA[<p>To activate the private Adress room in Ubuntu you have to add the following
-line to your /etc/sysctl.conf:</p>
-
-<blockquote><p>net.ipv6.conf.all.use_tempaddr=2</p></blockquote>
-
-<p>!!!!!!!!!!!!! Funktioniert noch nicht so richtig!neinein! &hellip;</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[VIM the Most Text Editor of All]]></title>
-    <link href="http://bse666.github.io/blog/2014/02/07/vim-the-most-text-editor-of-all/"/>
-    <updated>2014-02-07T00:00:00+01:00</updated>
-    <id>http://bse666.github.io/blog/2014/02/07/vim-the-most-text-editor-of-all</id>
-    <content type="html"><![CDATA[
-	<ol>
-		<li>Things for the masses</li>
-	</ol></li>
-	<li>vim-cheat-sheet]]></content>
   </entry>
   
   <entry>
