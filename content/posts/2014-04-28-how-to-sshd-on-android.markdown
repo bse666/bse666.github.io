@@ -2,6 +2,7 @@
 
 layout: post
 title: "How to enable sshd on Android"
+date: 2014-04-28
 published: true
 tags: ["linux","android"]
 
