@@ -1,0 +1,11 @@
+baseURL = 'https://bse666.github.io'
+languageCode = 'de-DE'
+title = 'BSEs HOMEsite'
+theme = 'bse'
+menu = 'main'
+enableRobotsTXT = true
+markup.highlight.noClasses=false
+
+[taxonomies]
+	tag = 'tags'
+

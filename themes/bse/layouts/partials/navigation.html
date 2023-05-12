@@ -1,0 +1,30 @@
+<nav role="navigation">
+	<div>
+			<div class="bse-logo">
+				<div class="bse-logo-front"></div>
+					<div class="font">
+		<a href="{{ .Site.BaseURL }}">
+						{{ .Site.Title }}</div>
+		</a>
+				<div class="bse-logo-back">
+
+			</div>
+			</div>
+			
+		<div>
+			{{ partial "i18nlist.html" . }}
+			{{ if .Site.Menus.main }}
+			<ul>
+				{{ range .Site.Menus.main }}
+				<li>
+					<a href="{{ .URL }}" title="{{ .Name }} page">
+						{{ .Name }}
+					</a>
+				</li>
+				{{ end }}
+			</ul>
+			{{ end }}
+			{{ partial "social-follow.html" . }}
+		</div>
+	</div>
+</nav>

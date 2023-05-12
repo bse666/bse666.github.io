@@ -1,0 +1,39 @@
+---
+
+layout: post
+title: "Nethack 4"
+date: "2014-02-07"
+published: true
+tags: ["linux","windows","games"]
+
+---
+
+There are many clones in the Nethack Community.
+Here is one that i learned to love the most.
+
+[dynahack](http://tung.github.io/DynaHack/) is the way to go.
+Download the latest source or git clone it.
+
+```
+git clone https://github.com/tung/DynaHack
+cd DynaHack
+sudo apt-get install gcc flex bison libncursesw5-dev libjansson-dev \
+zlib1g-dev cmake cmake-curses-gui
+mkdir build
+cd build
+cmake ..
+ccmake .
+```
+
+Set SHELLDIR and CMAKE_INSTALL_PREFIX to /home/username/dynahack/install.
+
+Set BINDIR, DATADIR and LIBDIR to /home/username/dynahack/install/dynahack-data.
+
+Press 'c' to configure, then 'g' to generate the build files and exit.
+
+```
+make install
+```
+
+And now have a blast shredding through the dungeons.
+<SHIFT-S> saves the game.

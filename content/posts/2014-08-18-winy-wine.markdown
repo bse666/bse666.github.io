@@ -1,0 +1,18 @@
+---
+
+title: "Winy Wine"
+published: true
+date: 2014-08-18
+tags: ["linux","wine"]
+
+---
+
+Getting things done with wine on linux is cool, but you have to seperate working
+directories if you want to be able to cleanly remove or install another
+application side by side. Here i have a few tips for you to make yout first
+steps into that.
+
+``` bash
+WINEPREFIX="$HOME/prefix32" WINEARCH='win32' wine 'wineboot'
+WINEPREFIX="$HOME/prefix32" WINEARCH='win32' winetricks vcredist2005
+```

@@ -1,0 +1,9 @@
+<footer role="contentinfo">
+	<div>
+		<a href="{{ .Site.BaseURL }}">
+			&copy; {{ now.Format "2006" }} {{ .Site.Title }}
+		</a>
+		<div name="Social-follow">{{ partial "social-follow.html" . }}</div>
+		<div name="Impressum">{{ partial "impressum.html" . }}</div>
+	</div>
+</footer>

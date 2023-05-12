@@ -1,0 +1,15 @@
+<header>
+	<div>
+		{{ partial "navigation.html" . }}
+		<div>
+			<h2>
+				{{ .Title }}
+			</h2>
+			{{ with .Params.description }}
+			<h4>
+				{{ . }}
+			</h4>
+			{{ end }}
+		</div>
+	</div>
+</header>
