@@ -9,12 +9,11 @@ published: true
 ---
 
 Der neue Blog, mit vielen kleinen aber feinen CSS und HTML Zutaten. Und all das mit Versionierungstricks bis hin zur Auslieferung per Github-Agenten.
-
 <!--more-->
 
 Was ist ein schöneres Event als einen Blog mit neuem Content zu versorgen?
 
-Genau.
+Genau!
 
 Den Blog komplett neu zu bauen. Aus diesem Grund, und wegen unten beschriebenen, kommt hier ein neues Grundgerüst, das nun hoffentlich noch ein paar Jahre halten wird. 
 
