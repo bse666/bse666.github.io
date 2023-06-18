@@ -69,7 +69,7 @@ For i can not say what your preferenced settings are here are some of mine:
 "/etc/mpd.conf"
 ```
 
-# Options
+#### Options
 ``` bash
 restore_paused "yes"
 auto_update "yes"
