@@ -10,8 +10,11 @@ published: true
 
 # My little BaSH
 
-BaSH - Die Bourne-Again Shell ist eine freie Unix Shell, die zumeist unter aktuellen Linux Distributionen Ihren Einsatz findet.
-Die Bash-Shell ist für viele Linux- und Unix-Nutzer das tägliche Arbeitswerkzeug. Doch während die meisten die grundlegenden Befehle kennen, schlummern in der Bash zahlreiche mächtige Features, die den Arbeitsalltag erheblich erleichtern können.
+BaSH - Die Bourne-Again Shell ist eine freie Unix Shell, die zumeist unter aktuellen Linux Distributionen Ihren Einsatz findet. \\
+Die Bash-Shell ist für viele Linux- und Unix-Nutzer das tägliche Arbeitswerkzeug. \\
+Doch während die meisten die grundlegenden Befehle kennen, schlummern in der Bash zahlreiche mächtige Features, die den Arbeitsalltag erheblich erleichtern können.
+
+<!--more-->
 
 ## Der Reverse-Search: Strg+R
 
