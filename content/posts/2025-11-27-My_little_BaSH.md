@@ -13,7 +13,7 @@ published: true
 BaSH - Die Bourne-Again Shell ist eine freie Unix Shell, die zumeist unter aktuellen Linux Distributionen Ihren Einsatz findet.
 Die Bash-Shell ist für viele Linux- und Unix-Nutzer das tägliche Arbeitswerkzeug. Doch während die meisten die grundlegenden Befehle kennen, schlummern in der Bash zahlreiche mächtige Features, die den Arbeitsalltag erheblich erleichtern können.
 
-## Die Reverse-Search: Strg+R
+## Der Reverse-Search: Strg+R
 
 Einer der produktivitätssteigerndsten Shortcuts überhaupt ist die Rückwärtssuche in der Bash-History mit `Strg+R`. Statt mühsam durch die History zu scrollen oder lange Befehle neu zu tippen, kannst du einfach:
 
